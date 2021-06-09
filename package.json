@@ -1,0 +1,22 @@
+{
+  "name": "clinigengroup-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch styles/style.scss:styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThibertChristophe/ClinigenGroup-Clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThibertChristophe/ClinigenGroup-Clone/issues"
+  },
+  "homepage": "https://github.com/ThibertChristophe/ClinigenGroup-Clone#readme",
+  "dependencies": {
+    "scss": "^0.2.4"
+  }
+}
