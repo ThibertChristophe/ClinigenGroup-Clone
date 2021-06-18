@@ -1,6 +1,8 @@
 @import "fonts";
 @import "variables";
 @import "mixin";
+@import "header";
+@import "index";
 //***///
 * {
   margin: 0;
@@ -11,225 +13,39 @@
   outline: none;
   font-family: "Gotham";
 }
+html {
+  overflow-x: hidden;
+}
+
 header {
   background-color: white;
 }
 li {
   list-style: none;
 }
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 23px 36px;
-
-  .lienMenu {
-    display: flex;
-    li {
-      display: inline-block;
-      margin: 0 25px;
-      padding-right: 25px;
-      background: url(/img/dropdown.svg) no-repeat right;
-      a {
-        color: #270072;
-        font-weight: bold;
-        font-size: 15px;
-      }
-    }
-    span {
-      border-left: 1px solid rgb(202, 202, 202);
-      height: 15px;
-      padding-left: 20px;
-    }
-  }
-  input {
-    width: 130px;
-    height: 40px;
-    @include btn_vert;
-  }
+h1 {
+  color: $bleuFonce;
+  font-size: 60px;
+  line-height: 64px;
+  font-weight: 700;
+}
+h2 {
+  color: $bleuFonce;
+  font-size: 35px;
 }
 
-.search {
-  background-color: $violetClair;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  input {
-    background-color: $violetFonce;
-    width: 640px;
-    height: 40px;
-    border-radius: 20px;
-    padding-left: 30px;
-    &::placeholder {
-      color: white;
-      font-size: 18px;
-    }
-  }
+h4 {
+  color: $bleuFonce;
+  font-size: 30px;
+}
+
+p {
+  line-height: 25.2px;
 }
 
 .ligneVerte {
   display: inline-block;
   width: 70px;
   border-top: 2px solid $vertClair;
-}
-
-.section1 {
-  .section1__container1 {
-    display: block;
-    padding-top: 80px;
-    width: 600px;
-    text-align: center;
-    height: 520px;
-    margin: 0 auto;
-    background-color: #fff;
-    h1 {
-      color: $bleuFonce;
-      font-size: 60px;
-      line-height: 64px;
-      font-weight: 700;
-      margin: 20px 0;
-    }
-    p {
-      width: 400px;
-      margin: 0 auto;
-    }
-    span {
-      font-weight: bold;
-    }
-  }
-  img {
-    width: 700px;
-    height: 500px;
-  }
-  .section1__container2 {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin: 0 auto;
-    max-height: 310px;
-    h2 {
-      color: $bleuFonce;
-      font-size: 35px;
-      width: 400px;
-      margin-top: 50px;
-    }
-    p {
-      margin: 30px 0;
-      width: 400px;
-    }
-  }
-  .img-left {
-    position: absolute;
-    transform: scale(1.5);
-    left: -150px;
-    z-index: 0;
-  }
-  .img-right {
-    position: absolute;
-    transform: scale(2.4);
-    right: -150px;
-    top: 210px;
-    z-index: -2;
-  }
-  .img-woman {
-    margin-left: 180px;
-    transform: scale(1.5);
-    max-height: 310px;
-    z-index: -2;
-  }
-  input {
-    @include btn_vert;
-    width: 200px;
-    height: 45px;
-    margin-top: 20px;
-  }
-}
-.section2 {
-  height: 1300px;
-  background-color: $fondGris;
-  .section2__titreText {
-    padding-top: 40px;
-    margin: 0 auto;
-    width: 900px;
-    text-align: center;
-  }
-  h2 {
-    color: $bleuFonce;
-    font-size: 35px;
-    width: 540px;
-    margin: 20px auto;
-  }
-  .flexCard {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin: 20px auto;
-
-    .card {
-      background-color: #fff;
-      width: 340px;
-      height: 475px;
-      border: 1px solid #dfdfdf;
-      border-radius: 5px;
-      text-align: center;
-      padding: 30px 20px;
-      color: $bleuFonce;
-      font-size: 16px;
-      h4 {
-        margin-top: 10px;
-        font-size: 30px;
-      }
-      p {
-        margin: 15px 0;
-      }
-      ul {
-        margin-left: 20px;
-      }
-      li {
-        margin: 25px 0 25px 15px;
-        text-align: left;
-        position: relative;
-        &::before {
-          content: "";
-          display: inline-block;
-          height: 1.5em;
-          width: 1.5em;
-          background: url("/img/li.svg") no-repeat;
-          background-size: contain;
-          position: absolute;
-          top: 0;
-          left: -2em;
-        }
-      }
-    }
-  }
-  .videoText {
-    display: flex;
-    max-width: 1100px;
-    margin: 70px auto;
-    .video {
-      display: inline-block;
-      max-width: 730px;
-      height: 410px;
-      border: 1px solid #474747;
-      margin-right: 25px;
-    }
-    .labelVideo {
-      max-width: 340px;
-      h4 {
-        color: $bleuFonce;
-        font-size: 30px;
-        margin-bottom: 80px;
-      }
-      p {
-        font-size: 18px;
-      }
-    }
-  }
-}
-.speakLanguage {
-  max-width: 1100px;
+  margin: 25px 0;
 }

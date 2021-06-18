@@ -2,24 +2,6 @@
   font-family: "Gotham";
   src: url("/font/GothamBook.ttf");
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: none;
-  text-decoration: none;
-  outline: none;
-  font-family: "Gotham";
-}
-
-header {
-  background-color: white;
-}
-
-li {
-  list-style: none;
-}
-
 .menu {
   display: flex;
   justify-content: space-between;
@@ -75,27 +57,14 @@ li {
   font-size: 18px;
 }
 
-.ligneVerte {
-  display: inline-block;
-  width: 70px;
-  border-top: 2px solid #8cdb1f;
-}
-
 .section1 .section1__container1 {
   display: block;
-  padding-top: 80px;
+  padding-top: 60px;
   width: 600px;
   text-align: center;
   height: 520px;
   margin: 0 auto;
   background-color: #fff;
-}
-.section1 .section1__container1 h1 {
-  color: #270072;
-  font-size: 60px;
-  line-height: 64px;
-  font-weight: 700;
-  margin: 20px 0;
 }
 .section1 .section1__container1 p {
   width: 400px;
@@ -112,12 +81,10 @@ li {
   display: flex;
   justify-content: space-between;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0 auto 25px auto;
   max-height: 310px;
 }
 .section1 .section1__container2 h2 {
-  color: #270072;
-  font-size: 35px;
   width: 400px;
   margin-top: 50px;
 }
@@ -133,10 +100,11 @@ li {
 }
 .section1 .img-right {
   position: absolute;
-  transform: scale(2.4);
-  right: -150px;
+  transform: scale(2.7);
+  right: 100px;
   top: 210px;
   z-index: -2;
+  width: 300px;
 }
 .section1 .img-woman {
   margin-left: 180px;
@@ -159,16 +127,14 @@ li {
   background-color: #f4f4f4;
 }
 .section2 .section2__titreText {
-  padding-top: 40px;
+  padding-top: 20px;
   margin: 0 auto;
   width: 900px;
   text-align: center;
 }
 .section2 h2 {
-  color: #270072;
-  font-size: 35px;
   width: 540px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 .section2 .flexCard {
   display: flex;
@@ -229,8 +195,6 @@ li {
   max-width: 340px;
 }
 .section2 .videoText .labelVideo h4 {
-  color: #270072;
-  font-size: 30px;
   margin-bottom: 80px;
 }
 .section2 .videoText .labelVideo p {
@@ -239,6 +203,202 @@ li {
 
 .speakLanguage {
   max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto;
+}
+.speakLanguage .speakLanguage_L {
+  width: 500px;
+  margin-right: 25px;
+}
+.speakLanguage h2 {
+  margin-bottom: 25px;
+}
+.speakLanguage img {
+  width: 500px;
+}
+
+.helpingJob_container {
+  background-color: #f4f4f4;
+  height: 565px;
+  padding: 50px 0;
+}
+
+.helpingJob {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+.helpingJob img {
+  width: 350px;
+}
+.helpingJob .helpingJob_L {
+  padding-right: 20px;
+}
+.helpingJob .helpingJob_R h2 {
+  margin-bottom: 35px;
+  width: 600px;
+}
+.helpingJob .helpingJob_R .helpingJob_R_point {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.helpingJob .helpingJob_R .helpingJob_R_point .helpingJob_R_point_card {
+  position: relative;
+  max-width: 350px;
+  margin-bottom: 10px;
+  padding-left: 3em;
+  counter-increment: counted-list;
+  line-height: 25.2px;
+}
+.helpingJob .helpingJob_R .helpingJob_R_point .helpingJob_R_point_card::before {
+  content: counter(counted-list);
+  position: absolute;
+  left: 0px;
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 1.7;
+  width: 40px;
+  height: 40px;
+  background: #7239ff;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.slider {
+  height: 400px;
+  background-color: #7239ff;
+}
+
+.personnalAssistant {
+  height: 700px;
+  background-color: #f4f4f4;
+}
+.personnalAssistant .personnalAssistant_title {
+  text-align: center;
+  width: 750px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.personnalAssistant .personnalAssistant_title h2 {
+  margin-bottom: 20px;
+}
+.personnalAssistant .personnalAssistant_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 25px auto;
+}
+.personnalAssistant .personnalAssistant_list .personnalAssistant_card {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 15px;
+}
+.personnalAssistant .personnalAssistant_list .personnalAssistant_card h2 {
+  margin-bottom: 10px;
+}
+
+.helpUs {
+  background-color: #7239ff;
+  color: white;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+.helpUs .helpUs_container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.helpUs .helpUs_container h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+.helpUs .helpUs_container p {
+  margin-bottom: 25px;
+  width: 640px;
+}
+.helpUs .helpUs_container input {
+  color: white;
+  background: transparent;
+  border-radius: 40px;
+  border: 1px solid white;
+  font-size: 14px;
+  font-weight: bold;
+  width: 400px;
+  height: 40px;
+}
+
+footer {
+  padding: 20px;
+  background-color: #270072;
+  height: 725px;
+}
+footer h5 {
+  color: #8cdb1f;
+  margin: 15px 0;
+}
+footer a {
+  color: white;
+}
+footer .footer_container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  font-family: "Gotham";
+}
+
+html {
+  overflow-x: hidden;
+}
+
+header {
+  background-color: white;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  color: #270072;
+  font-size: 60px;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+h2 {
+  color: #270072;
+  font-size: 35px;
+}
+
+h4 {
+  color: #270072;
+  font-size: 30px;
+}
+
+p {
+  line-height: 25.2px;
+}
+
+.ligneVerte {
+  display: inline-block;
+  width: 70px;
+  border-top: 2px solid #8cdb1f;
+  margin: 25px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
