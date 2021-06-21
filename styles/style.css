@@ -123,13 +123,14 @@
 }
 
 .section2 {
-  height: 1300px;
+  min-height: 1300px;
   background-color: #f4f4f4;
+  padding: 25px 70px;
 }
 .section2 .section2__titreText {
   padding-top: 20px;
   margin: 0 auto;
-  width: 900px;
+  max-width: 900px;
   text-align: center;
 }
 .section2 h2 {
@@ -138,9 +139,10 @@
 }
 .section2 .flexCard {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 1100px;
   margin: 20px auto;
+  flex-wrap: wrap;
 }
 .section2 .flexCard .card {
   background-color: #fff;
@@ -152,6 +154,7 @@
   padding: 30px 20px;
   color: #270072;
   font-size: 16px;
+  margin-bottom: 20px;
 }
 .section2 .flexCard .card h4 {
   margin-top: 10px;
@@ -188,7 +191,6 @@
   display: inline-block;
   max-width: 730px;
   height: 410px;
-  border: 1px solid #474747;
   margin-right: 25px;
 }
 .section2 .videoText .labelVideo {
@@ -199,6 +201,11 @@
 }
 .section2 .videoText .labelVideo p {
   font-size: 18px;
+}
+@media all and (max-width: 1200px) {
+  .section2 .videoText iframe {
+    width: 500px;
+  }
 }
 
 .speakLanguage {
@@ -218,10 +225,15 @@
 .speakLanguage img {
   width: 500px;
 }
+@media all and (max-width: 1200px) {
+  .speakLanguage img {
+    width: 300px;
+  }
+}
 
 .helpingJob_container {
   background-color: #f4f4f4;
-  height: 565px;
+  min-height: 565px;
   padding: 50px 0;
 }
 
@@ -231,6 +243,7 @@
   align-items: center;
   margin: 0 auto;
   max-width: 1100px;
+  flex-wrap: wrap;
 }
 .helpingJob img {
   width: 350px;
@@ -269,9 +282,51 @@
   border-radius: 20px;
 }
 
+@media all and (max-width: 1200px) {
+  .helpingJob {
+    justify-content: center;
+    align-items: center;
+  }
+  .helpingJob img {
+    width: 450px;
+  }
+}
 .slider {
-  height: 400px;
+  min-height: 500px;
   background-color: #7239ff;
+}
+.slider .slider1 {
+  text-align: center;
+  padding: 70px 0;
+}
+.slider .slider_message {
+  font-size: 38px;
+  color: white;
+  line-height: 48px;
+  width: 690px;
+  margin: 15px auto;
+}
+.slider .slider_author {
+  color: white;
+  font-style: 18px;
+  font-style: italic;
+}
+.slider .slider_dot {
+  width: 200px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+.slider .slider_dot span {
+  display: inline-block;
+  border: 1px solid white;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 0 4px;
+  opacity: 1;
+  background-color: transparent;
 }
 
 .personnalAssistant {
@@ -280,7 +335,7 @@
 }
 .personnalAssistant .personnalAssistant_title {
   text-align: center;
-  width: 750px;
+  max-width: 750px;
   margin: 0 auto;
   padding-top: 20px;
 }
@@ -342,6 +397,8 @@ footer {
 footer h5 {
   color: #8cdb1f;
   margin: 15px 0;
+  line-height: 18px;
+  font-size: 16px;
 }
 footer a {
   color: white;
@@ -349,6 +406,37 @@ footer a {
 footer .footer_container {
   max-width: 1100px;
   margin: 0 auto;
+  padding-top: 25px;
+}
+footer .footer_container .footer_container_liste {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 70px;
+}
+footer .footer_container .footer_container_liste li {
+  margin: 10px 0;
+  width: 200px;
+  line-height: 22px;
+  font-size: 16px;
+  color: white;
+}
+footer .footer_container .footer_container_liste a:hover {
+  text-decoration: underline;
+}
+footer .footer_container .footer_liens {
+  margin-bottom: 10px;
+}
+footer .footer_container .footer_liens a {
+  margin-right: 15px;
+  font-size: 14px;
+}
+footer .footer_container .footer_liens a:hover {
+  text-decoration: underline;
+}
+footer .footer_container .copyright p {
+  color: white;
+  font-size: 14px;
 }
 
 * {
