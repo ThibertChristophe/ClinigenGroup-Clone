@@ -117,7 +117,7 @@
   cursor: pointer;
   padding: 15px 0 0 20px;
 }
-.sousMenu_link:not(:nth-child(4)) {
+.sousMenu_link:not(:nth-last-child(1)) {
   border-bottom: 1px solid white;
 }
 .sousMenu_link:hover {
