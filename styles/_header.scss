@@ -12,10 +12,12 @@
     align-items: center;
     cursor: pointer;
     .lienMenu_link {
-      display: inline-block;
+      display: flex;
+      align-items: center;
       margin: 0 25px;
       padding-right: 25px;
       background: url(/img/dropdown.svg) no-repeat right;
+      height: 100%;
       a {
         color: #270072;
         font-weight: bold;
@@ -26,6 +28,15 @@
       border-left: 1px solid rgb(202, 202, 202);
       height: 15px;
       padding-left: 20px;
+    }
+    nav {
+      height: 100%;
+      .ulMenu {
+        height: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
     }
   }
   input {
@@ -54,31 +65,58 @@
   }
 }
 
-.sousMenu_Shortages {
+.sousMenu {
   position: fixed;
   display: flex;
   flex-direction: row;
   width: 250px;
   background: rgb(226, 226, 226);
-  top: 85px;
   opacity: 0;
-  .sousMenu_link {
-    display: inline-block;
-    height: 50px;
-    width: 100%;
-    color: $bleuFonce;
-    cursor: pointer;
-    padding: 13px 0 0 20px;
-    &:not(:nth-child(4)) {
-      border-bottom: 1px solid white;
-    }
-    &:hover {
-      background-color: rgb(197, 197, 197);
-    }
+  visibility: hidden;
+  top: 85px;
+}
+
+.shortages {
+  left: 490px;
+}
+.short:hover {
+  .shortages {
+    opacity: 100;
+    visibility: visible;
   }
 }
-.lienMenu_link:hover {
-  .sousMenu_Shortages {
+
+.sousHelp {
+  left: 665px;
+}
+.help:hover {
+  .sousHelp {
     opacity: 100;
+    visibility: visible;
+  }
+}
+
+.sousAbout {
+  left: 775px;
+}
+.about:hover {
+  .sousAbout {
+    opacity: 100;
+    visibility: visible;
+  }
+}
+
+.sousMenu_link {
+  display: inline-block;
+  height: 55px;
+  width: 100%;
+  color: $bleuFonce;
+  cursor: pointer;
+  padding: 15px 0 0 20px;
+  &:not(:nth-child(4)) {
+    border-bottom: 1px solid white;
+  }
+  &:hover {
+    background-color: rgb(197, 197, 197);
   }
 }
