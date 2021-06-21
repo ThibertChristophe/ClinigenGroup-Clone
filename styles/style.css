@@ -8,18 +8,21 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 23px 36px;
+  height: 85px;
 }
 .menu .lienMenu {
   display: flex;
+  height: 100%;
+  align-items: center;
+  cursor: pointer;
 }
-.menu .lienMenu li {
+.menu .lienMenu .lienMenu_link {
   display: inline-block;
   margin: 0 25px;
   padding-right: 25px;
   background: url(/img/dropdown.svg) no-repeat right;
 }
-.menu .lienMenu li a {
+.menu .lienMenu .lienMenu_link a {
   color: #270072;
   font-weight: bold;
   font-size: 15px;
@@ -55,6 +58,34 @@
 .search input::placeholder {
   color: white;
   font-size: 18px;
+}
+
+.sousMenu_Shortages {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  background: #e2e2e2;
+  top: 85px;
+  opacity: 0;
+}
+.sousMenu_Shortages .sousMenu_link {
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  color: #270072;
+  cursor: pointer;
+  padding: 13px 0 0 20px;
+}
+.sousMenu_Shortages .sousMenu_link:not(:nth-child(4)) {
+  border-bottom: 1px solid white;
+}
+.sousMenu_Shortages .sousMenu_link:hover {
+  background-color: #c5c5c5;
+}
+
+.lienMenu_link:hover .sousMenu_Shortages {
+  opacity: 100;
 }
 
 .section1 .section1__container1 {
@@ -95,13 +126,13 @@
 .section1 .img-left {
   position: absolute;
   transform: scale(1.5);
-  left: -150px;
+  right: 80%;
   z-index: 0;
 }
 .section1 .img-right {
   position: absolute;
   transform: scale(2.7);
-  right: 100px;
+  left: 90%;
   top: 210px;
   z-index: -2;
   width: 300px;
