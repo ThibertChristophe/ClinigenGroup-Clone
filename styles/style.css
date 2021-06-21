@@ -46,10 +46,14 @@
 .menu input {
   width: 130px;
   height: 40px;
+  cursor: pointer;
   background-color: #8cdb1f;
   border-radius: 20px;
   color: #270072;
   font-weight: bold;
+}
+.menu input:hover {
+  text-decoration: underline;
 }
 
 .search {
@@ -83,7 +87,8 @@
 }
 
 .shortages {
-  left: 490px;
+  left: 23rem;
+  float: left;
 }
 
 .short:hover .shortages {
@@ -131,7 +136,7 @@
   text-align: center;
   height: 520px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: transparent;
 }
 .section1 .section1__container1 p {
   width: 400px;
@@ -163,7 +168,7 @@
   position: absolute;
   transform: scale(1.5);
   right: 80%;
-  z-index: 0;
+  z-index: -2;
 }
 .section1 .img-right {
   position: absolute;
