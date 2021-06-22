@@ -70,7 +70,7 @@
 }
 
 .sousMenu {
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: row;
   width: 250px;
@@ -81,7 +81,7 @@
 }
 
 .shortages {
-  left: 23rem;
+  left: 800px;
   float: left;
 }
 .short:hover {
