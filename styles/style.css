@@ -426,6 +426,7 @@
   background-color: #7239ff;
 }
 .slider .slider1 {
+  visibility: visible;
   position: absolute;
   width: 1100px;
   text-align: center;
@@ -435,22 +436,23 @@
   transition: all 1s ease;
 }
 .slider .slider2 {
+  visibility: visible;
   position: absolute;
   width: 1100px;
   text-align: center;
   padding: 65px 0;
-  border: 1px solid blue;
   top: 0;
   left: 100%;
   transition: all 1s ease;
 }
 .slider .slider3 {
-  visibility: hidden;
+  visibility: visible;
   position: absolute;
   width: 1100px;
   text-align: center;
+  top: 0;
+  left: 100%;
   padding: 65px 0;
-  border: 1px solid red;
   transition: all 1s ease;
 }
 .slider .slider_message {
@@ -468,12 +470,24 @@
 .slider .slider_dot {
   position: relative;
   width: 200px;
-  margin: 15px auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   top: 400px;
 }
-.slider .slider_dot span {
+.slider .slider_dot .slider_dot_1 {
+  display: inline-block;
+  border: 1px solid white;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 0 4px;
+  opacity: 1;
+  background-color: #fff;
+}
+.slider .slider_dot .slider_dot_2,
+.slider .slider_dot .slider_dot_3 {
   display: inline-block;
   border: 1px solid white;
   width: 15px;
@@ -483,6 +497,13 @@
   margin: 0 4px;
   opacity: 1;
   background-color: transparent;
+}
+@media all and (max-width: 765px) {
+  .slider .slider_message {
+    font-size: 22px;
+    width: 700px;
+    line-height: 48px;
+  }
 }
 
 .personnalAssistant {
@@ -508,18 +529,18 @@
 }
 .personnalAssistant .personnalAssistant_list .personnalAssistant_card {
   flex: 0 0 50%;
-  width: 50%;
   padding: 15px;
 }
 .personnalAssistant .personnalAssistant_list .personnalAssistant_card h2 {
   margin-bottom: 10px;
 }
-
 @media all and (max-width: 765px) {
-  .personnalAssistant_list {
-    flex-wrap: wrap;
+  .personnalAssistant .personnalAssistant_list .personnalAssistant_card {
+    flex: 0 0 100%;
+    text-align: center;
   }
 }
+
 .helpUs {
   background-color: #7239ff;
   color: white;
