@@ -35,6 +35,12 @@
     }
   }
 
+@media all and (max-width:1200px) {
+  .section1__container2{
+    max-width: 1000px;
+  }
+}
+
   .img-left {
     position: absolute;
     transform: scale(1.5);
@@ -85,7 +91,7 @@
     .card {
       background-color: #fff;
       width: 340px;
-      height: 475px;
+      min-height: 475px;
       border: 1px solid #dfdfdf;
       border-radius: 5px;
       text-align: center;
@@ -120,7 +126,24 @@
         }
       }
     }
+    @media all and (max-width: 1200px) {
+      .card {
+        width: 275px;
+      }
+    }
+    @media all and (max-width: 970px) {
+      .card {
+        width: 340px;
+      }
+    }
+    @media all and (max-width: 770px) {
+      .card {
+        width: 450px;
+      }
+    }
   }
+
+
   .videoText {
     display: flex;
     max-width: 1100px;
@@ -129,7 +152,7 @@
       display: inline-block;
       max-width: 730px;
       height: 410px;
-      margin-right: 25px;
+      margin: 0 25px 0 0 ;
     }
     .labelVideo {
       max-width: 340px;
@@ -140,10 +163,23 @@
         font-size: 18px;
       }
     }
-    @media all and (max-width: 1200px) {
-      iframe {
-        width: 500px;
+  }
+  @media all and (max-width: 1200px) {
+    iframe {
+      width: 500px;
+    }
+  }
+  @media all and (max-width: 765px) {
+    .videoText{
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px auto;
+      .video {
+        margin: 0;
       }
+    }
+    .labelVideo{
+      min-width: 85%;
     }
   }
 }
@@ -163,12 +199,24 @@
   img {
     width: 500px;
   }
-  @media all and (max-width: 1200px) {
-    img {
-      width: 300px;
-    }
+}
+@media all and (max-width: 1200px) {
+  .speakLanguage img {
+    width: 300px;
   }
 }
+@media all and (max-width: 765px) {
+  .speakLanguage img {
+    width: 500px;
+  }
+  .speakLanguage{
+    flex-wrap: wrap;
+  }
+  .speakLanguage_L {
+    width: 100%;    
+  }
+}
+
 
 .helpingJob_container {
   background-color: $fondGris;
@@ -231,20 +279,52 @@
     }
   }
 }
+@media all and (max-width: 765px) {
+  .helpingJob {
+    padding: 0 55px;
+  }
+}
 
 .slider {
-  min-height: 500px;
+  position: relative;
+  min-height: 450px;
   background-color: $violetClair;
   .slider1 {
+    position: absolute;
+    width: 1100px;
     text-align: center;
     // margin: 0 auto;
-    padding: 70px 0;
+    padding: 65px 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 1s ease;
+  }
+  .slider2 {
+    position: absolute;
+    width: 1100px;
+    text-align: center;
+    // margin: 0 auto;
+    padding: 65px 0;
+    border: 1px solid blue;
+    top: 0;
+    left: 100%;
+    transition: all 1s ease;
+  }
+  .slider3 {
+    visibility: hidden;
+    position: absolute;
+    width: 1100px;
+    text-align: center;
+    // margin: 0 auto;
+    padding: 65px 0;
+    border: 1px solid red;
+    transition: all 1s ease;
   }
   .slider_message {
     font-size: 38px;
     color: white;
     line-height: 48px;
-    width: 690px;
+    width: 800px;
     margin: 15px auto;
   }
   .slider_author {
@@ -253,10 +333,12 @@
     font-style: italic;
   }
   .slider_dot {
+    position: relative;
     width: 200px;
-    margin: 50px auto;
+    margin: 15px auto;
     display: flex;
     justify-content: center;
+    top: 400px;
     span {
       display: inline-block;
       border: 1px solid white;
@@ -271,7 +353,7 @@
   }
 }
 .personnalAssistant {
-  height: 700px;
+  min-height: 700px;
   background-color: $fondGris;
   .personnalAssistant_title {
     text-align: center;
@@ -287,10 +369,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 900px;
-    margin: 25px auto;
+    margin: 25px auto 0 auto;
+    padding-bottom: 25px;
     .personnalAssistant_card {
       flex: 0 0 50%;
-      max-width: 50%;
+      width: 50%;
       padding: 15px;
       h2 {
         margin-bottom: 10px;
@@ -298,6 +381,12 @@
     }
   }
 }
+ @media all and (max-width: 765px) {
+   .personnalAssistant_list{
+     flex-wrap: wrap;
+   }
+ }
+
 .helpUs {
   background-color: $violetClair;
   color: white;

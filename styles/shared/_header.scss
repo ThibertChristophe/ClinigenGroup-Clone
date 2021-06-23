@@ -14,7 +14,8 @@
     .lienMenu_link {
       display: flex;
       align-items: center;
-      margin: 0 25px;
+      margin: 0 25px 0 0;
+      
       padding-right: 25px;
       background: url(/img/dropdown.svg) no-repeat right;
       height: 100%;
@@ -23,6 +24,10 @@
         font-weight: bold;
         font-size: 15px;
       }
+    }
+    .linkMenu{
+      padding-left: 25px;
+
     }
     span {
       border-left: 1px solid rgb(202, 202, 202);
@@ -80,30 +85,34 @@
   top: 85px;
 }
 
+/*
 .shortages {
-  left: 800px;
+  left: 34%;
   float: left;
 }
+*/
 .short:hover {
   .shortages {
     opacity: 100;
     visibility: visible;
   }
 }
-
+/*
 .sousHelp {
   left: 665px;
 }
+*/
 .help:hover {
   .sousHelp {
     opacity: 100;
     visibility: visible;
   }
 }
-
+/*
 .sousAbout {
   left: 775px;
 }
+*/
 .about:hover {
   .sousAbout {
     opacity: 100;
