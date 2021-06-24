@@ -2,6 +2,15 @@
   font-family: "Gotham";
   src: url("/font/GothamBook.ttf");
 }
+@keyframes searchBarSlideDown {
+  0% {
+    left: 0px;
+    top: -80px;
+  }
+  100% {
+    top: 0px;
+  }
+}
 .menu {
   display: flex;
   justify-content: space-between;
@@ -230,15 +239,6 @@
   display: block;
 }
 
-@keyframes searchBarSlideDown {
-  0% {
-    left: 0px;
-    top: -80px;
-  }
-  100% {
-    top: 0px;
-  }
-}
 .search-fixed {
   position: fixed;
   top: 0;
