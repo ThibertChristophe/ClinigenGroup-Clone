@@ -59,6 +59,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media all and (max-width: 990px) {
+    height: 65px;
+  }
   input {
     background-color: $violetFonce;
     width: 640px;
@@ -71,10 +74,17 @@
     }
   }
   .hamburger {
+    display: none;
     margin: 0 0 0 10px;
     button {
       cursor: pointer;
       background: transparent;
+      img {
+        width: 35px;
+      }
+    }
+    @media all and (max-width: 990px) {
+      display: block;
     }
   }
 }

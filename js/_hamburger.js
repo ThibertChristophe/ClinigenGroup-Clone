@@ -1,4 +1,5 @@
 const hamburgerButton = document.querySelector(".hamburger > button");
+const hamburgerButtonIMG = document.querySelector(".hamburger > button > img");
 const hamburger_menu = document.querySelector(".hamburger_menu");
 
 const hamburger_menu_link_shortage = document.querySelector(
@@ -12,6 +13,12 @@ const hamburger_sousMenu = document.querySelector(".hamburger_sousMenu");
  */
 hamburgerButton.addEventListener("click", () => {
   hamburger_menu.classList.toggle("show");
+  // Switch entre les 2 images de l'hamburger ( croix et hamburger)
+  if (hamburger_menu.classList.contains("show")) {
+    hamburgerButtonIMG.src = "/img/closeHamb.svg";
+  } else {
+    hamburgerButtonIMG.src = "/img/download.svg";
+  }
 });
 
 /**
