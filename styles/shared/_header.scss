@@ -4,6 +4,7 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+
   //padding: 23px 36px;
   height: 85px;
   .lienMenu {
@@ -11,6 +12,9 @@
     height: 100%;
     align-items: center;
     cursor: pointer;
+    @media all and (max-width: 990px) {
+      visibility: hidden;
+    }
     .lienMenu_link {
       display: flex;
       align-items: center;
@@ -50,15 +54,38 @@
     &:hover {
       text-decoration: underline;
     }
+    @media all and (max-width: 990px) {
+      display: none;
+    }
+  }
+  .signIn {
+    display: none;
+    visibility: hidden;
+    font-size: 14px;
+    flex: 0 0 50%;
+    &:hover {
+      text-decoration: underline;
+    }
+    @media all and (max-width: 990px) {
+      display: inline-block;
+      visibility: visible;
+    }
+  }
+  @media all and (max-width: 1200px) {
+    max-width: 1000px;
+  }
+  @media all and (max-width: 990px) {
+    max-width: 700px;
   }
 }
 
 .search {
   background-color: $violetClair;
-  height: 100px;
+  height: 82px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 5;
   @media all and (max-width: 990px) {
     height: 65px;
   }
@@ -185,4 +212,24 @@
 
 .show {
   display: block;
+}
+
+// animation de retour de la bar de search lors du scroll
+@keyframes searchBarSlideDown {
+  0% {
+    left: 0px;
+    top: -80px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.search-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  animation-name: searchBarSlideDown;
+  animation-duration: 0.15s;
+  animation-timing-function: linear;
 }
