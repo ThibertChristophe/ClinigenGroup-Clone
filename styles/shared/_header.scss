@@ -14,6 +14,7 @@
     cursor: pointer;
     @media all and (max-width: 990px) {
       visibility: hidden;
+      display: none;
     }
     .lienMenu_link {
       display: flex;
@@ -62,7 +63,9 @@
     display: none;
     visibility: hidden;
     font-size: 14px;
-    flex: 0 0 50%;
+    color: $violetFonce;
+    font-weight: bold;
+    // flex: 0 0 50%;
     &:hover {
       text-decoration: underline;
     }
@@ -75,7 +78,7 @@
     max-width: 1000px;
   }
   @media all and (max-width: 990px) {
-    max-width: 700px;
+    max-width: 680px;
   }
 }
 
@@ -95,9 +98,18 @@
     height: 40px;
     border-radius: 20px;
     padding-left: 30px;
+    font-size: 18px;
+    color: white;
     &::placeholder {
       color: white;
       font-size: 18px;
+    }
+    &:focus {
+      background-color: white;
+      color: $bleuFonce;
+      &::placeholder {
+        color: $bleuFonce;
+      }
     }
   }
   .hamburger {

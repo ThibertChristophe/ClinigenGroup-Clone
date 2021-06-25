@@ -28,6 +28,7 @@
 @media all and (max-width: 990px) {
   .menu .lienMenu {
     visibility: hidden;
+    display: none;
   }
 }
 .menu .lienMenu .lienMenu_link {
@@ -81,7 +82,8 @@
   display: none;
   visibility: hidden;
   font-size: 14px;
-  flex: 0 0 50%;
+  color: #501ece;
+  font-weight: bold;
 }
 .menu .signIn:hover {
   text-decoration: underline;
@@ -99,7 +101,7 @@
 }
 @media all and (max-width: 990px) {
   .menu {
-    max-width: 700px;
+    max-width: 680px;
   }
 }
 
@@ -122,10 +124,19 @@
   height: 40px;
   border-radius: 20px;
   padding-left: 30px;
+  font-size: 18px;
+  color: white;
 }
 .search input::placeholder {
   color: white;
   font-size: 18px;
+}
+.search input:focus {
+  background-color: white;
+  color: #270072;
+}
+.search input:focus::placeholder {
+  color: #270072;
 }
 .search .hamburger {
   display: none;
