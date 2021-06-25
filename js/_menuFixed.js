@@ -11,8 +11,16 @@ window.addEventListener("scroll", () => {
   const { scrollTop } = document.documentElement;
   if (menu_coord <= -25) {
     menu.classList.add("search-fixed");
+    hamburger_menu.style.position = "fixed";
+    hamburger_menu.style.top = "65px";
+    hamburger_menu.style.left = "50%";
+    hamburger_menu.style.transform = "translateX(-50%)";
   }
   if (scrollTop <= 25) {
     menu.classList.remove("search-fixed");
+    hamburger_menu.style.position = "relative";
+    hamburger_menu.style.top = "0";
+    hamburger_menu.style.left = "0";
+    hamburger_menu.style.transform = "none";
   }
 });

@@ -130,11 +130,13 @@
 .hamburger_menu {
   display: none;
   position: relative;
-  width: 700px;
-  margin: 0 auto;
+  width: 100%;
+  background: white;
   .hamburger_menu_link {
     border-bottom: 1px solid rgb(218, 218, 218);
     padding: 20px 20px 20px 0;
+    margin: 0 auto;
+    width: 700px;
     a {
       display: inline-block;
       width: 100%;

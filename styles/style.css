@@ -158,12 +158,14 @@
 .hamburger_menu {
   display: none;
   position: relative;
-  width: 700px;
-  margin: 0 auto;
+  width: 100%;
+  background: white;
 }
 .hamburger_menu .hamburger_menu_link {
   border-bottom: 1px solid #dadada;
   padding: 20px 20px 20px 0;
+  margin: 0 auto;
+  width: 700px;
 }
 .hamburger_menu .hamburger_menu_link a {
   display: inline-block;
@@ -444,6 +446,11 @@
     width: 450px;
   }
 }
+@media all and (max-width: 1200px) {
+  .section2 .flexCard {
+    max-width: 700px;
+  }
+}
 .section2 .videoText {
   display: flex;
   max-width: 1100px;
@@ -467,6 +474,9 @@
 @media all and (max-width: 1200px) {
   .section2 iframe {
     width: 500px;
+  }
+  .section2 .videoText {
+    max-width: 700px;
   }
 }
 @media all and (max-width: 765px) {
@@ -499,6 +509,11 @@
 }
 .speakLanguage img {
   width: 500px;
+}
+@media all and (max-width: 1200px) {
+  .speakLanguage {
+    max-width: 700px;
+  }
 }
 
 @media all and (max-width: 1200px) {
@@ -702,6 +717,11 @@
   .personnalAssistant .personnalAssistant_list .personnalAssistant_card {
     flex: 0 0 100%;
     text-align: center;
+  }
+}
+@media all and (max-width: 1200px) {
+  .personnalAssistant .personnalAssistant_list {
+    max-width: 700px;
   }
 }
 
