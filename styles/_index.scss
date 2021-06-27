@@ -482,23 +482,26 @@ footer {
     line-height: 18px;
     font-size: 16px;
   }
+  img{
+    margin-top: 15px;
+  }
   a {
     color: white;
   }
   background-color: $bleuFonce;
-  height: 725px;
+  min-height: 725px;
   .footer_container {
-    max-width: 1100px;
+    max-width: 960px;
     margin: 0 auto;
     padding-top: 25px;
+    min-height: 725px;
     .footer_container_liste {
       display: flex;
       justify-content: space-between;
-      width: 90%;
       margin-bottom: 70px;
       li {
         margin: 10px 0;
-        width: 200px;
+        max-width: 200px;
         line-height: 22px;
         font-size: 16px;
         color: white;
@@ -506,6 +509,20 @@ footer {
       a:hover {
         text-decoration: underline;
       }
+      .footer_container_card{
+        @media all and (max-width: 990px) {
+          &:not(:nth-last-child(1)){
+          width: 100px;
+        }
+          img{
+            max-width: 150px;
+          }
+        }
+      }
+   
+    }
+    @media all and (max-width: 990px) {
+      max-width:600px;
     }
     .footer_liens {
       margin-bottom: 10px;
