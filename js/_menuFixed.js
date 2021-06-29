@@ -9,6 +9,7 @@ let menu_coord = menu.getBoundingClientRect();
 window.addEventListener("scroll", () => {
   menu_coord = menu.getBoundingClientRect().top;
   const { scrollTop } = document.documentElement;
+  // On accroche le menu
   if (menu_coord <= -25) {
     menu.classList.add("search-fixed");
     hamburger_menu.style.position = "fixed";
@@ -16,6 +17,7 @@ window.addEventListener("scroll", () => {
     hamburger_menu.style.left = "50%";
     hamburger_menu.style.transform = "translateX(-50%)";
   }
+  // On le decroche
   if (scrollTop <= 25) {
     menu.classList.remove("search-fixed");
     hamburger_menu.style.position = "relative";
