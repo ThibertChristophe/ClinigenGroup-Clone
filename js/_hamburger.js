@@ -26,6 +26,5 @@ hamburgerButton.addEventListener("click", () => {
  * Sous menu
  */
 hamburger_menu_link_shortage.addEventListener("click", () => {
-  console.log(hamburger_sousMenu.classList);
   hamburger_sousMenu.classList.toggle("show");
 });

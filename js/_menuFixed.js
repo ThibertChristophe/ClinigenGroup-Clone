@@ -1,5 +1,5 @@
 const menu = document.querySelector(".search");
-
+const blurDiv = document.querySelector(".blur");
 let menu_coord = menu.getBoundingClientRect();
 
 /**
@@ -22,5 +22,11 @@ window.addEventListener("scroll", () => {
     hamburger_menu.style.top = "0";
     hamburger_menu.style.left = "0";
     hamburger_menu.style.transform = "none";
+  }
+  // fait apparaitre le fond blanc transparent qui est en dessous du menu hamburger
+  if (menu.classList.contains("search-fixed")) {
+    blurDiv.classList.add("show");
+  } else {
+    blurDiv.classList.remove("show");
   }
 });
