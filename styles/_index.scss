@@ -306,6 +306,13 @@
           text-align: center;
           border-radius: 20px;
         }
+        @media all and (max-width: 750px) {
+          max-width: 100%;
+        }
+      }
+      @media all and (max-width: 750px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
       }
     }
   }
@@ -322,6 +329,10 @@
 @media all and (max-width: 765px) {
   .helpingJob {
     padding: 0 55px;
+    max-width: 700px;
+    img {
+      width: 350px;
+    }
   }
 }
 
@@ -482,7 +493,7 @@ footer {
     line-height: 18px;
     font-size: 16px;
   }
-  img{
+  img {
     margin-top: 15px;
   }
   a {
@@ -509,20 +520,19 @@ footer {
       a:hover {
         text-decoration: underline;
       }
-      .footer_container_card{
+      .footer_container_card {
         @media all and (max-width: 990px) {
-          &:not(:nth-last-child(1)){
-          width: 100px;
-        }
-          img{
+          &:not(:nth-last-child(1)) {
+            width: 100px;
+          }
+          img {
             max-width: 150px;
           }
         }
       }
-   
     }
     @media all and (max-width: 990px) {
-      max-width:600px;
+      max-width: 600px;
     }
     .footer_liens {
       margin-bottom: 10px;

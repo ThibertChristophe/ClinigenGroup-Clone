@@ -82,7 +82,7 @@
   display: none;
   visibility: hidden;
   font-size: 14px;
-  color: #501ece;
+  color: #270072;
   font-weight: bold;
 }
 .menu .signIn:hover {
@@ -107,11 +107,16 @@
 
 .search {
   background-color: #7239ff;
-  height: 82px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 5;
+}
+@media all and (max-width: 1200px) {
+  .search {
+    height: 85px;
+  }
 }
 @media all and (max-width: 990px) {
   .search {
@@ -167,7 +172,9 @@
   margin: 0 auto;
   width: 700px;
 }
-.hamburger_menu .hamburger_menu_link a {
+.hamburger_menu .hamburger_menu_link .hamburger_menu_link_shortage,
+.hamburger_menu .hamburger_menu_link .hamburger_menu_link_help,
+.hamburger_menu .hamburger_menu_link .hamburger_menu_link_about {
   display: inline-block;
   width: 100%;
   color: #270072;
@@ -178,17 +185,28 @@
 .hamburger_menu .hamburger_menu_link:nth-last-child(1) {
   margin-bottom: 20px;
 }
-.hamburger_menu .hamburger_sousMenu {
+
+.hamburger_sousMenu {
   display: none;
   margin-top: 20px;
 }
-.hamburger_menu .hamburger_sousMenu li {
-  background-color: #e2e2e2;
-  padding: 20px 0 20px 20px;
+.hamburger_sousMenu li {
+  background-color: #eeeeee;
   width: 700px;
+  height: 55px;
 }
-.hamburger_menu .hamburger_sousMenu li:not(:nth-last-child(1)) {
+.hamburger_sousMenu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 16px 0 0 20px;
+  background: url(/img/arrow.svg) no-repeat 660px;
+}
+.hamburger_sousMenu li:not(:nth-last-child(1)) {
   border-bottom: 1px solid white;
+}
+.hamburger_sousMenu li:hover {
+  background-color: #e2e2e2;
 }
 
 .sousMenu {
@@ -196,7 +214,7 @@
   display: flex;
   flex-direction: row;
   width: 250px;
-  background: #e2e2e2;
+  background: #eeeeee;
   opacity: 0;
   visibility: hidden;
   top: 85px;
@@ -245,11 +263,7 @@
   border-bottom: 1px solid white;
 }
 .sousMenu_link:hover {
-  background-color: #c5c5c5;
-}
-
-.show {
-  display: block;
+  background-color: #e2e2e2;
 }
 
 .search-fixed {
@@ -260,6 +274,10 @@
   animation-name: searchBarSlideDown;
   animation-duration: 0.15s;
   animation-timing-function: linear;
+}
+
+.show {
+  display: block;
 }
 
 .section1 .section1__container1 {
@@ -584,6 +602,17 @@
   text-align: center;
   border-radius: 20px;
 }
+@media all and (max-width: 750px) {
+  .helpingJob .helpingJob_R .helpingJob_R_point .helpingJob_R_point_card {
+    max-width: 100%;
+  }
+}
+@media all and (max-width: 750px) {
+  .helpingJob .helpingJob_R .helpingJob_R_point {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
 
 @media all and (max-width: 1200px) {
   .helpingJob {
@@ -597,6 +626,10 @@
 @media all and (max-width: 765px) {
   .helpingJob {
     padding: 0 55px;
+    max-width: 700px;
+  }
+  .helpingJob img {
+    width: 350px;
   }
 }
 .slider {
