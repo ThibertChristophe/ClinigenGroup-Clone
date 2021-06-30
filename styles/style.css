@@ -17,6 +17,7 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
   height: 85px;
 }
 .menu .lienMenu {
@@ -117,6 +118,7 @@
   align-items: center;
   justify-content: center;
   z-index: 5;
+  padding: 0 20px;
 }
 @media all and (max-width: 1200px) {
   .search {
@@ -563,16 +565,16 @@ h2 {
 }
 @media all and (max-width: 770px) {
   .section2 .section2__titreText {
-    width: 500px;
+    max-width: 500px;
   }
 }
 .section2 h2 {
-  width: 540px;
+  max-width: 540px;
   margin: 0 auto 10px auto;
 }
 @media all and (max-width: 770px) {
   .section2 h2 {
-    width: 500px;
+    margin: 0 0 10px 0;
   }
 }
 .section2 .flexCard {
@@ -659,6 +661,11 @@ h2 {
 }
 .section2 .videoText .labelVideo p {
   font-size: 18px;
+}
+@media all and (max-width: 770px) {
+  .section2 .videoText .labelVideo {
+    max-width: 500px;
+  }
 }
 @media all and (max-width: 1200px) {
   .section2 iframe {
@@ -749,7 +756,7 @@ h2 {
 }
 @media all and (max-width: 770px) {
   .helpingJob .helpingJob_R h2 {
-    width: 500px;
+    max-width: 500px;
   }
 }
 .helpingJob .helpingJob_R .helpingJob_R_point {
@@ -791,7 +798,7 @@ h2 {
 }
 @media all and (max-width: 770px) {
   .helpingJob .helpingJob_R {
-    width: 500px;
+    max-width: 500px;
   }
 }
 
@@ -855,6 +862,13 @@ h2 {
   width: 800px;
   margin: 15px auto;
 }
+@media all and (max-width: 770px) {
+  .slider .slider_message {
+    font-size: 22px;
+    width: 500px;
+    line-height: 48px;
+  }
+}
 .slider .slider_author {
   color: white;
   font-style: 18px;
@@ -891,13 +905,6 @@ h2 {
   opacity: 1;
   background-color: transparent;
 }
-@media all and (max-width: 765px) {
-  .slider .slider_message {
-    font-size: 22px;
-    width: 700px;
-    line-height: 48px;
-  }
-}
 
 .personnalAssistant {
   min-height: 700px;
@@ -914,7 +921,7 @@ h2 {
 }
 @media all and (max-width: 770px) {
   .personnalAssistant .personnalAssistant_title {
-    width: 550px;
+    max-width: 550px;
   }
 }
 .personnalAssistant .personnalAssistant_list {
@@ -945,7 +952,7 @@ h2 {
 }
 @media all and (max-width: 770px) {
   .personnalAssistant .personnalAssistant_list {
-    width: 550px;
+    max-width: 550px;
   }
 }
 
