@@ -170,6 +170,9 @@
       height: 100%;
       padding: 16px 0 0 20px;
       background: url(/img/arrow.svg) no-repeat 660px;
+      &:active {
+        color: $violetClair;
+      }
     }
     &:not(:nth-last-child(1)) {
       border-bottom: 1px solid white;
