@@ -80,6 +80,9 @@
   @media all and (max-width: 990px) {
     max-width: 680px;
   }
+  @media all and (max-width: 770px) {
+    max-width: 500px;
+  }
 }
 
 .search {
@@ -113,6 +116,9 @@
       &::placeholder {
         color: $bleuFonce;
       }
+    }
+    @media all and (max-width: 990px) {
+      width: 450px;
     }
   }
   .hamburger {

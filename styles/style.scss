@@ -3,7 +3,7 @@
 @import "./shared/mixin";
 @import "./shared/keyframes";
 @import "./shared/header";
-@import "about-shortages";
+@import "./about-shortages";
 @import "index";
 //***///
 * {
@@ -30,10 +30,17 @@ h1 {
   font-size: 60px;
   line-height: 64px;
   font-weight: 700;
+  @media all and (max-width: 770px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 h2 {
   color: $bleuFonce;
   font-size: 35px;
+  @media all and (max-width: 770px) {
+    font-size: 28px;
+  }
 }
 
 h4 {
@@ -49,5 +56,5 @@ p {
   display: inline-block;
   width: 70px;
   border-top: 2px solid $vertClair;
-  margin: 25px 0;
+  margin: 20px 0;
 }
