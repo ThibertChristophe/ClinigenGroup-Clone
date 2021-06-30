@@ -1,4 +1,3 @@
-const main = document.querySelector("main");
 const hamburgerButton = document.querySelector(".hamburger > button");
 const hamburgerButtonIMG = document.querySelector(".hamburger > button > img");
 const hamburger_menu = document.querySelector(".hamburger_menu");
