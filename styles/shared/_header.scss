@@ -117,7 +117,7 @@
         color: $bleuFonce;
       }
     }
-    @media all and (max-width: 990px) {
+    @media all and (max-width: 770px) {
       width: 450px;
     }
   }
@@ -156,6 +156,8 @@
       font-weight: bold;
       font-size: 15px;
       background: url(/img/dropdown.svg) no-repeat 660px;
+      text-align: left;
+      cursor: pointer;
     }
     &:nth-last-child(1) {
       margin-bottom: 20px;
