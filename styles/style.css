@@ -171,6 +171,27 @@
     display: block;
   }
 }
+.search .searchSignIn {
+  visibility: hidden;
+  position: absolute;
+  right: 10px;
+  background-color: #8cdb1f;
+  border-radius: 20px;
+  color: #270072;
+  font-weight: bold;
+  width: 90px;
+  font-size: 14px;
+  padding: 0;
+  cursor: pointer;
+}
+.search .searchSignIn:hover {
+  text-decoration: underline;
+}
+@media all and (max-width: 990px) {
+  .search .searchSignIn {
+    display: none;
+  }
+}
 
 .hamburger_menu {
   display: none;
@@ -297,6 +318,7 @@
   top: 0;
   left: 0;
   right: 0;
+  height: 65px;
   animation-name: searchBarSlideDown;
   animation-duration: 0.15s;
   animation-timing-function: linear;

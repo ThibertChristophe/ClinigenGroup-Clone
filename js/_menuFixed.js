@@ -1,5 +1,7 @@
 const menu = document.querySelector(".search");
 const blurDiv = document.querySelector(".blur");
+const searchSignIn = document.querySelector(".searchSignIn");
+console.log(searchSignIn);
 let menu_coord = menu.getBoundingClientRect();
 
 /**
@@ -28,7 +30,9 @@ window.addEventListener("scroll", () => {
   // fait apparaitre le fond blanc transparent qui est en dessous du menu hamburger
   if (menu.classList.contains("search-fixed")) {
     blurDiv.classList.add("show");
+    searchSignIn.style.visibility = "visible";
   } else {
     blurDiv.classList.remove("show");
+    searchSignIn.style.visibility = "hidden";
   }
 });
