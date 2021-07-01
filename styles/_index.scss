@@ -31,13 +31,13 @@
     justify-content: space-between;
     max-width: 1100px;
     margin: 0 auto 25px auto;
-    min-height: 310px;
+    height: 310px;
     h2 {
       width: 400px;
       margin-top: 50px;
     }
     p {
-      margin: 30px 0;
+      margin: 20px 0 20px 0;
       width: 400px;
     }
     @media all and (max-width: 1200px) {
@@ -50,16 +50,19 @@
       width: 100%;
       flex-wrap: wrap;
       justify-content: center;
+      min-height: 650px;
+      p {
+        margin: 20px auto;
+      }
     }
     .section1__container2_L {
-      margin-bottom: 100px;
-      text-align: center;
+      text-align: left;
       h2 {
         width: 500px;
         margin-top: 100px;
       }
-      p {
-        margin: 0 auto;
+      @media all and (max-width: 770px) {
+        text-align: center;
       }
     }
   }
@@ -132,7 +135,7 @@
     @include btn_vert;
     width: 200px;
     height: 45px;
-    margin-top: 20px;
+    //margin-top: 20px;
   }
 }
 .section2 {
