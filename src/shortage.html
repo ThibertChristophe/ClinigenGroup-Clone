@@ -27,13 +27,13 @@
                 <div class="sousMenu shortages">
                   <ul>
                     <li class="sousMenu_link">
-                      <a href="about-shortages.html">About shortages</a>
+                      <a href="">About shortages</a>
                     </li>
                     <li class="sousMenu_link">
                       <a href="">UK drug shortages</a>
                     </li>
                     <li class="sousMenu_link">
-                      <a href="shortage.html">Report a shortage</a>
+                      <a href="">Report a shortage</a>
                     </li>
                     <li class="sousMenu_link"><a href="">Insights</a></li>
                   </ul>
@@ -106,7 +106,6 @@
           <ul>
             <li class="hamburger_menu_link">
               <button class="hamburger_menu_link_shortage">SHORTAGES</button>
-              <!-- <a href="#" class="hamburger_menu_link_shortage">SHORTAGES</a> -->
               <div class="hamburger_sousMenu">
                 <ul>
                   <li>
@@ -116,7 +115,7 @@
                     <a href="">UK drug shortages</a>
                   </li>
                   <li class="hamburger_sousMenu_li">
-                    <a href="shortage.html">Report a shortage</a>
+                    <a href="">Report a shortage</a>
                   </li>
                   <li class="hamburger_sousMenu_li"><a href="">Insights</a></li>
                 </ul>
@@ -140,72 +139,115 @@
     </header>
     <main>
       <!--------------------------------------- CONTENU ------------------------------------------------------>
-      <section>
-        <div class="login_main">
-          <h1>Cliniport upgrade coming soon</h1>
-          <p>
-            <strong>
-              We are updating the Cliniport platform to deliver a better digital
-              experience for our customers.</strong
-            >
-          </p>
-          <a href="http://">Find out more about the upgrade here.</a>
+      <section class="sectionShortageReport">
+        <div class="fil">
+          <nav>
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li><span class="filActif">Shortages</span></li>
+            </ol>
+          </nav>
         </div>
-        <div class="connect">
-          <div class="connect_direct">
-            <img src="/img/clinigen-logo.svg" alt="" />
-            <h4>Your source for hard to find medicines</h4>
-            <input type="button" value="SIGN IN TO CLINIGEN DIRECT" />
-            <p>
-              <strong>New to Clinigen Direct? Register as a user.</strong> The
-              Clinigen Direct service is for the support of healthcare
-              professionals only. We will review and validate the information
-              you provide when registering an account.
-            </p>
-            <input type="button" value="REGISTER" class="btn_register" />
-          </div>
-          <div class="connect_cliniport">
-            <img src="/img/clinport-logo-green.svg" alt="" />
-            <h4>Your source for hard to find medicines</h4>
-            <input
-              type="button"
-              value="SIGN IN TO CLINIPORT"
-              class="btn_cliniport"
-            />
-            <p><strong>Do you require access to CLiniport?</strong></p>
-            <a href="http://">Get in touch to create an account.</a>
-          </div>
+        <div class="content">
+          <h1>Report a medicine shortage</h1>
+          <p>
+            Please complete the form below to help our global sourcing team
+            track down the hard to find medicine your patient needs as quickly
+            as possible.
+          </p>
+          <p>
+            Resolving medicine shortages is one of the biggest and most
+            frustrating challenges facing hospital pharmacists and pharmacy
+            technicians today. We are committed to finding ways to support you
+            in these time-critical situations and this section of Clinigen
+            Direct will be expanded over time. If you would like to help shape
+            our approach to shortages, <a href="login.html">please register here</a> .
+          </p>
+          <p>
+           <i> Forms should only be completed by healthcare professionals. If you
+            are a patient or a relative / friend of a patient please contact
+            your local healthcare professional for advice.</i>
+          </p>
+          <p>Fields marked * are mandatory.</p>
         </div>
       </section>
-
-      <section class="speakLangage">
-        <div class="speakLanguageLogin">
-          <div class="speakLanguage_L">
-            <h2>We speak your language</h2>
-            <p>
-              Got a question? Get in touch and let us help you improve patient
-              outcomes.
-            </p>
-            <ul>
-              <li>
-                <img src="/img/phone.svg" alt="Phone" srcset="" />+44 (0) 1932
-                824 100
-              </li>
-              <li>
-                <img src="/img/Fax.svg" alt="Fax" srcset="" />+44 (0) 1932 824
-                300
-              </li>
-              <li>
-                <img src="/img/mail.svg" alt="Mail" srcset="" /><a
-                  href="mailto:info@clinigengroup.com"
-                  >info@clinigengroup.com</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="speakLanguage_R">
-            <img src="/img/Clinigen Assets-01.svg" alt="" />
-          </div>
+      <!------------------------------------- FORMULAIRE ------------------------------------>
+      <section>
+        <div class="reportForm">
+          <form action="submit" class="formShortage">
+            <p>Contact details</p>
+            <div class="form_contactDetails">
+              <div class="form_firstName">
+                <label for="first_name">First name*</label>
+                <input type="text" name="first_name" id="first_name" required/>
+              </div>
+              <div class="form_Surname">
+                <label for="sur_name">Surname*</label>
+                <input type="text" name="sur_name" id="sur_name" required/>
+              </div>
+              <div class="form_email">
+                <label for="email">Email*</label>
+                <input type="text" name="email" id="email" required/>
+              </div>
+              <div class="form_phone">
+                <label for="phone">Phone*</label>
+                <input type="text" name="phone" id="phone" required/>
+              </div>
+            </div>
+            <p>Your organisation</p>
+            <div class="form_organisation">
+              <div class="form_organisation_name">
+                <label for="organisation_name">Organisation name*</label>
+                <input
+                  type="text"
+                  name="organisation_name"
+                  id="organisation_name"
+                  required
+                />
+              </div>
+                <div class="form_organisation_address">
+                    <div class="adress1">
+                  <label for="organisation_address1">Address 1 *</label>
+                  <input
+                    type="text"
+                    name="organisation_address1"
+                    id="organisation_address1"
+                    required
+                  />
+                </div>
+                <div class="adress2">
+                  <label for="organisation_address2">Address 2 *</label>
+                  <input
+                    type="text"
+                    name="organisation_address2"
+                    id="organisation_address2"
+                    required
+                  />
+                </div>
+                <div class="city">
+                  <label for="organisation_city">City *</label>
+                  <input
+                    type="text"
+                    name="organisation_city"
+                    id="organisation_city"
+                    required
+                  />
+                </div>
+                <div class="postCode">
+                  <label for="organisation_postCode">Postcode *</label>
+                  <input
+                    type="text"
+                    name="organisation_postCode"
+                    id="organisation_postCode"
+                    required
+                  /></div>
+                </div>
+              </div>
+            </div>
+            <div class="form_drugRequest"></div>
+            <div class="form_drugAuthorisation"></div>
+            <input type="submit" />
+          </form>
         </div>
       </section>
     </main>
@@ -243,7 +285,7 @@
             <h5>Enquiries</h5>
             <ul>
               <li><a href="">List your product on Clinigen Direct</a></li>
-              <li><a href="shortage.html">Report a shortage</a></li>
+              <li><a href="">Report a shortage</a></li>
               <li><a href="">Sourcing enquiry</a></li>
             </ul>
           </div>

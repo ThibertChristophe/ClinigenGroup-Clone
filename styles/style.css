@@ -435,6 +435,97 @@ h2 {
   text-decoration: underline;
 }
 
+.sectionShortageReport {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.sectionShortageReport .content h1 {
+  margin-bottom: 20px;
+}
+.sectionShortageReport .content a {
+  color: #7239ff;
+}
+.sectionShortageReport .content a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+@media all and (max-width: 1200px) {
+  .sectionShortageReport {
+    max-width: 700px;
+  }
+}
+
+.reportForm {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+}
+.reportForm p {
+  font-weight: bold;
+}
+.reportForm .formShortage {
+  width: 1100px;
+  padding-top: 40px;
+}
+.reportForm .formShortage label {
+  margin-bottom: 10px;
+}
+.reportForm .formShortage input {
+  max-width: 330px;
+  height: 50px;
+  border: 1px solid #a1a1a1;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 18px;
+}
+.reportForm .formShortage input:focus {
+  border: 1px solid black;
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+.reportForm .formShortage .form_contactDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 15px 0 20px 0;
+}
+.reportForm .formShortage .form_contactDetails .form_firstName,
+.reportForm .formShortage .form_contactDetails .form_Surname,
+.reportForm .formShortage .form_contactDetails .form_email,
+.reportForm .formShortage .form_contactDetails .form_phone {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.reportForm .formShortage .form_organisation .form_organisation_name {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: 20px 0;
+}
+.reportForm .formShortage .form_organisation .form_organisation_name input {
+  display: block;
+  max-width: 680px;
+}
+.reportForm .formShortage .form_organisation .form_organisation_address {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.reportForm .formShortage .form_organisation .form_organisation_address .adress1,
+.reportForm .formShortage .form_organisation .form_organisation_address .adress2,
+.reportForm .formShortage .form_organisation .form_organisation_address .city,
+.reportForm .formShortage .form_organisation .form_organisation_address .postCode {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+@media all and (max-width: 1200px) {
+  .reportForm .formShortage {
+    max-width: 700px;
+  }
+}
+
 .login_main {
   max-width: 1100px;
   background-color: white;
