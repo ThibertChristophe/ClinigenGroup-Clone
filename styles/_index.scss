@@ -134,8 +134,13 @@
   input {
     @include btn_vert;
     width: 200px;
-    height: 45px;
+    height: 40px;
+    transition: all 0.2s ease;
     //margin-top: 20px;
+    &:hover {
+      color: white;
+      background-color: $bleuFonce;
+    }
   }
 }
 .section2 {

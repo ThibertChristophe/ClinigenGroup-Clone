@@ -800,7 +800,12 @@ h2 {
   font-weight: bold;
   cursor: pointer;
   width: 200px;
-  height: 45px;
+  height: 40px;
+  transition: all 0.2s ease;
+}
+.section1 input:hover {
+  color: white;
+  background-color: #270072;
 }
 
 .section2 {
