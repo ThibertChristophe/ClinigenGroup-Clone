@@ -1,0 +1,195 @@
+.login_main {
+  max-width: 1100px;
+  background-color: white;
+  margin: 50px auto 20px auto;
+  a {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: $violetClair;
+    &:hover {
+      color: blue;
+      text-decoration: underline;
+    }
+  }
+  p {
+    margin: 10px 0;
+  }
+}
+.connect {
+  max-width: 1100px;
+  background-color: white;
+  margin: 50px auto;
+  display: flex;
+  img {
+    margin-bottom: 40px;
+  }
+  input {
+    width: 300px;
+    height: 40px;
+    @include btn_vert;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    transition: all 0.2s ease;
+    &:hover {
+      color: white;
+      background-color: $bleuFonce;
+    }
+  }
+  h4 {
+    margin-bottom: 50px;
+  }
+  .connect_direct {
+    flex: 0 0 50%;
+    padding-right: 50px;
+    border-right: 1px solid grey;
+    .btn_register {
+      background-color: transparent;
+      color: $bleuFonce;
+      border: 1px solid $vertClair;
+      border-radius: 20px;
+      width: 150px;
+      height: 40px;
+      margin-top: 20px;
+      &:hover {
+        color: white;
+        background-color: $bleuFonce;
+        border: 1px solid $bleuFonce;
+      }
+    }
+  }
+  .connect_cliniport {
+    flex: 0 0 50%;
+    padding-left: 50px;
+    a {
+      display: block;
+      margin: 20px 0;
+      font-weight: bold;
+      color: $violetClair;
+      &:hover {
+        color: blue;
+        text-decoration: underline;
+      }
+    }
+    .btn_cliniport {
+      width: 260px;
+      height: 40px;
+      background-color: #00524e;
+      color: white;
+      transition: all 0.2s ease;
+      margin-bottom: 30px;
+      &:hover {
+        background-color: $bleuFonce;
+      }
+    }
+  }
+}
+
+.speakLangage {
+  background-color: $fondGris;
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speakLanguageLogin {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .speakLanguage_L {
+    margin-right: 25px;
+    p {
+      margin-bottom: 20px;
+    }
+    li {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      img {
+        width: 24px;
+        margin-right: 10px;
+      }
+      a {
+        color: $violetClair;
+        &:hover {
+          color: blue;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  h2 {
+    margin-bottom: 25px;
+  }
+  img {
+    width: 500px;
+  }
+  @media all and (max-width: 1200px) {
+    max-width: 900px;
+  }
+  @media all and (max-width: 990px) {
+    max-width: 700px;
+  }
+  @media all and (max-width: 770px) {
+    max-width: 500px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .speakLanguageLogin img {
+    width: 400px;
+  }
+}
+@media all and (max-width: 990px) {
+  .speakLanguageLogin img {
+    width: 300px;
+  }
+}
+@media all and (max-width: 765px) {
+  .speakLanguageLogin img {
+    width: 500px;
+  }
+  .speakLanguageLogin {
+    flex-wrap: wrap;
+  }
+  .speakLanguage_L {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .login_main,
+  .connect {
+    max-width: 900px;
+  }
+}
+@media all and (max-width: 990px) {
+  .login_main,
+  .connect {
+    max-width: 700px;
+  }
+  .connect input {
+    width: 250px;
+    height: 55px;
+    overflow-wrap: break-word;
+  }
+}
+@media all and (max-width: 770px) {
+  .login_main {
+    max-width: 500px;
+  }
+  .connect {
+    max-width: 500px;
+    flex-wrap: wrap;
+    .connect_direct {
+      flex: 0 0 100%;
+      border: none;
+      margin-bottom: 20px;
+    }
+    .connect_cliniport {
+      padding: 0;
+    }
+  }
+}

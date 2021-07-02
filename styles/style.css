@@ -70,6 +70,7 @@
   border-radius: 20px;
   color: #270072;
   font-weight: bold;
+  cursor: pointer;
 }
 .menu input:hover {
   text-decoration: underline;
@@ -179,6 +180,7 @@
   border-radius: 20px;
   color: #270072;
   font-weight: bold;
+  cursor: pointer;
   width: 90px;
   font-size: 14px;
   padding: 0;
@@ -384,6 +386,7 @@ h2 {
   color: #270072;
   font-weight: bold;
   cursor: pointer;
+  cursor: pointer;
   transition: all 0.2s ease;
 }
 .btn_shortages:hover {
@@ -423,6 +426,216 @@ h2 {
   text-decoration: underline;
 }
 
+.login_main {
+  max-width: 1100px;
+  background-color: white;
+  margin: 50px auto 20px auto;
+}
+.login_main a {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #7239ff;
+}
+.login_main a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.login_main p {
+  margin: 10px 0;
+}
+
+.connect {
+  max-width: 1100px;
+  background-color: white;
+  margin: 50px auto;
+  display: flex;
+}
+.connect img {
+  margin-bottom: 40px;
+}
+.connect input {
+  width: 300px;
+  height: 40px;
+  background-color: #8cdb1f;
+  border-radius: 20px;
+  color: #270072;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-bottom: 25px;
+  transition: all 0.2s ease;
+}
+.connect input:hover {
+  color: white;
+  background-color: #270072;
+}
+.connect h4 {
+  margin-bottom: 50px;
+}
+.connect .connect_direct {
+  flex: 0 0 50%;
+  padding-right: 50px;
+  border-right: 1px solid grey;
+}
+.connect .connect_direct .btn_register {
+  background-color: transparent;
+  color: #270072;
+  border: 1px solid #8cdb1f;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+}
+.connect .connect_direct .btn_register:hover {
+  color: white;
+  background-color: #270072;
+  border: 1px solid #270072;
+}
+.connect .connect_cliniport {
+  flex: 0 0 50%;
+  padding-left: 50px;
+}
+.connect .connect_cliniport a {
+  display: block;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #7239ff;
+}
+.connect .connect_cliniport a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.connect .connect_cliniport .btn_cliniport {
+  width: 260px;
+  height: 40px;
+  background-color: #00524e;
+  color: white;
+  transition: all 0.2s ease;
+  margin-bottom: 30px;
+}
+.connect .connect_cliniport .btn_cliniport:hover {
+  background-color: #270072;
+}
+
+.speakLangage {
+  background-color: #f4f4f4;
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speakLanguageLogin {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.speakLanguageLogin .speakLanguage_L {
+  margin-right: 25px;
+}
+.speakLanguageLogin .speakLanguage_L p {
+  margin-bottom: 20px;
+}
+.speakLanguageLogin .speakLanguage_L li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.speakLanguageLogin .speakLanguage_L li img {
+  width: 24px;
+  margin-right: 10px;
+}
+.speakLanguageLogin .speakLanguage_L li a {
+  color: #7239ff;
+}
+.speakLanguageLogin .speakLanguage_L li a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.speakLanguageLogin h2 {
+  margin-bottom: 25px;
+}
+.speakLanguageLogin img {
+  width: 500px;
+}
+@media all and (max-width: 1200px) {
+  .speakLanguageLogin {
+    max-width: 900px;
+  }
+}
+@media all and (max-width: 990px) {
+  .speakLanguageLogin {
+    max-width: 700px;
+  }
+}
+@media all and (max-width: 770px) {
+  .speakLanguageLogin {
+    max-width: 500px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .speakLanguageLogin img {
+    width: 400px;
+  }
+}
+@media all and (max-width: 990px) {
+  .speakLanguageLogin img {
+    width: 300px;
+  }
+}
+@media all and (max-width: 765px) {
+  .speakLanguageLogin img {
+    width: 500px;
+  }
+
+  .speakLanguageLogin {
+    flex-wrap: wrap;
+  }
+
+  .speakLanguage_L {
+    width: 100%;
+  }
+}
+@media all and (max-width: 1200px) {
+  .login_main,
+.connect {
+    max-width: 900px;
+  }
+}
+@media all and (max-width: 990px) {
+  .login_main,
+.connect {
+    max-width: 700px;
+  }
+
+  .connect input {
+    width: 250px;
+    height: 55px;
+    overflow-wrap: break-word;
+  }
+}
+@media all and (max-width: 770px) {
+  .login_main {
+    max-width: 500px;
+  }
+
+  .connect {
+    max-width: 500px;
+    flex-wrap: wrap;
+  }
+  .connect .connect_direct {
+    flex: 0 0 100%;
+    border: none;
+    margin-bottom: 20px;
+  }
+  .connect .connect_cliniport {
+    padding: 0;
+  }
+}
 .section1 .section1__container1 {
   display: block;
   padding-top: 60px;
@@ -576,6 +789,7 @@ h2 {
   border-radius: 20px;
   color: #270072;
   font-weight: bold;
+  cursor: pointer;
   width: 200px;
   height: 45px;
 }
@@ -1016,6 +1230,7 @@ h2 {
   border: 1px solid white;
   font-size: 14px;
   font-weight: bold;
+  cursor: pointer;
   width: 400px;
   height: 40px;
 }
@@ -1059,11 +1274,16 @@ footer .footer_container .footer_container_liste {
   margin-bottom: 70px;
 }
 footer .footer_container .footer_container_liste li {
+  display: flex;
+  align-items: center;
   margin: 10px 0;
   max-width: 200px;
   line-height: 22px;
   font-size: 16px;
   color: white;
+}
+footer .footer_container .footer_container_liste li img {
+  margin: 0 8px 0 0;
 }
 footer .footer_container .footer_container_liste a:hover {
   text-decoration: underline;

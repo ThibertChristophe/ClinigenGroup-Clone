@@ -3,6 +3,7 @@
   border-radius: 20px;
   color: #270072;
   font-weight: bold;
+  cursor: pointer;
 }
 
 @mixin btn_transparent {
@@ -12,4 +13,5 @@
   border: 1px solid white;
   font-size: 14px;
   font-weight: bold;
+  cursor: pointer;
 }
