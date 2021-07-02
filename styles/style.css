@@ -62,21 +62,25 @@
   display: flex;
   align-items: center;
 }
-.menu input {
+.menu .btn_signIn {
   width: 130px;
   height: 40px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   background-color: #8cdb1f;
   border-radius: 20px;
   color: #270072;
   font-weight: bold;
   cursor: pointer;
 }
-.menu input:hover {
+.menu .btn_signIn:hover {
   text-decoration: underline;
 }
 @media all and (max-width: 990px) {
-  .menu input {
+  .menu .btn_signIn {
     display: none;
   }
 }
@@ -176,14 +180,19 @@
   visibility: hidden;
   position: absolute;
   right: 10px;
+  height: 40px;
+  width: 90px;
+  font-size: 14px;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   background-color: #8cdb1f;
   border-radius: 20px;
   color: #270072;
   font-weight: bold;
-  cursor: pointer;
-  width: 90px;
-  font-size: 14px;
-  padding: 0;
   cursor: pointer;
 }
 .search .searchSignIn:hover {

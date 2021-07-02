@@ -46,10 +46,14 @@
       }
     }
   }
-  input {
+  .btn_signIn {
     width: 130px;
     height: 40px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     @include btn_vert;
     &:hover {
       text-decoration: underline;
@@ -139,11 +143,16 @@
     visibility: hidden;
     position: absolute;
     right: 10px;
-    @include btn_vert;
+    height: 40px;
     width: 90px;
     font-size: 14px;
     padding: 0;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    @include btn_vert;
     &:hover {
       text-decoration: underline;
     }

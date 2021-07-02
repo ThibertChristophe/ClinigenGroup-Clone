@@ -1,7 +1,7 @@
 const menu = document.querySelector(".search");
 const blurDiv = document.querySelector(".blur");
 const searchSignIn = document.querySelector(".searchSignIn");
-console.log(searchSignIn);
+
 let menu_coord = menu.getBoundingClientRect();
 
 /**
