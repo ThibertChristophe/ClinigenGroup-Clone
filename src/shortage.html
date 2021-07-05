@@ -161,12 +161,15 @@
             technicians today. We are committed to finding ways to support you
             in these time-critical situations and this section of Clinigen
             Direct will be expanded over time. If you would like to help shape
-            our approach to shortages, <a href="login.html">please register here</a> .
+            our approach to shortages,
+            <a href="login.html">please register here</a> .
           </p>
           <p>
-           <i> Forms should only be completed by healthcare professionals. If you
-            are a patient or a relative / friend of a patient please contact
-            your local healthcare professional for advice.</i>
+            <i>
+              Forms should only be completed by healthcare professionals. If you
+              are a patient or a relative / friend of a patient please contact
+              your local healthcare professional for advice.</i
+            >
           </p>
           <p>Fields marked * are mandatory.</p>
         </div>
@@ -175,25 +178,27 @@
       <section>
         <div class="reportForm">
           <form action="submit" class="formShortage">
+            <!---------------- CONTACT DETAILS ------------------>
             <p>Contact details</p>
             <div class="form_contactDetails">
               <div class="form_firstName">
                 <label for="first_name">First name*</label>
-                <input type="text" name="first_name" id="first_name" required/>
+                <input type="text" name="first_name" id="first_name" required />
               </div>
               <div class="form_Surname">
                 <label for="sur_name">Surname*</label>
-                <input type="text" name="sur_name" id="sur_name" required/>
+                <input type="text" name="sur_name" id="sur_name" required />
               </div>
               <div class="form_email">
                 <label for="email">Email*</label>
-                <input type="text" name="email" id="email" required/>
+                <input type="text" name="email" id="email" required />
               </div>
               <div class="form_phone">
                 <label for="phone">Phone*</label>
-                <input type="text" name="phone" id="phone" required/>
+                <input type="text" name="phone" id="phone" required />
               </div>
             </div>
+            <!---------------- YOUR ORGANISATION ------------------>
             <p>Your organisation</p>
             <div class="form_organisation">
               <div class="form_organisation_name">
@@ -205,8 +210,8 @@
                   required
                 />
               </div>
-                <div class="form_organisation_address">
-                    <div class="adress1">
+              <div class="form_organisation_address">
+                <div class="adress1">
                   <label for="organisation_address1">Address 1 *</label>
                   <input
                     type="text"
@@ -240,11 +245,37 @@
                     name="organisation_postCode"
                     id="organisation_postCode"
                     required
-                  /></div>
+                  />
+                </div>
+              </div>
+              <div class="form_organisation_country">
+                <label for="organisation_country">Organisation Country *</label>
+                <select name="country" id="organisation_country" required>
+                  <option value="BE">Belgium</option>
+                  <option value="FR">France</option>
+                  <option value="UK">United Kingdom</option>
+                  <option value="GE">Germany</option>
+                </select>
+              </div>
+            </div>
+            <!---------------- DRUG ------------------>
+            <p>Your drug request</p>
+            <div class="form_drugRequest">
+              <div class="form_drugRequest_name">
+                <div class="genericName">
+                  <label for="genericName"
+                    >Generic name/Active Ingredient *</label
+                  >
+                  <input type="text" required />
+                </div>
+                <div class="brandName">
+                  <label for="brandName">Brand name</label>
+                  <input type="text" />
                 </div>
               </div>
             </div>
-            <div class="form_drugRequest"></div>
+            <!---------------- DRUG AUTHORISATION ------------------>
+            <p>Drug authorisation</p>
             <div class="form_drugAuthorisation"></div>
             <input type="submit" />
           </form>

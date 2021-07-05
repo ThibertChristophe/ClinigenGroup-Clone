@@ -84,6 +84,35 @@
           margin-bottom: 20px;
         }
       }
+      .form_organisation_country {
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        select {
+          display: block;
+          max-width: 330px;
+          height: 50px;
+          border: 1px solid rgb(161, 161, 161);
+          border-radius: 5px;
+          padding-left: 20px;
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    // Drug
+    .form_drugRequest_name {
+      margin: 20px 0;
+      .genericName,
+      .brandName {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        input {
+          display: block;
+          max-width: 680px;
+        }
+      }
     }
     @media all and (max-width: 1200px) {
       max-width: 700px;
