@@ -266,17 +266,165 @@
                   <label for="genericName"
                     >Generic name/Active Ingredient *</label
                   >
-                  <input type="text" required />
+                  <input type="text" id="genericName" required />
                 </div>
                 <div class="brandName">
                   <label for="brandName">Brand name</label>
-                  <input type="text" />
+                  <input type="text" id="brandName" />
+                </div>
+              </div>
+              <div class="form_drugRequest_strengEtc">
+                <div class="strength">
+                  <label for="strength">Strength *</label>
+                  <input type="text" id="strength" required />
+                </div>
+                <div class="packSize">
+                  <label for="packSize">Pack Size</label>
+                  <input type="text" id="packSize" />
+                </div>
+                <div class="dosage">
+                  <label for="dosage">Dosage Form *</label>
+                  <input type="text" id="dosage" required />
+                </div>
+                <div class="presentation">
+                  <label for="presentation">Presentation</label>
+                  <input type="text" id="presentation" />
+                </div>
+                <div class="quantity">
+                  <label for="quantity">Required Quantity *</label>
+                  <input type="text" id="quantity" required />
+                </div>
+                <div class="target">
+                  <label for="target">Required Target Price</label>
+                  <input type="text" id="target" required />
+                </div>
+                <div class="language">
+                  <label for="language">Preferred Language</label>
+                  <input type="text" id="language" required />
                 </div>
               </div>
             </div>
             <!---------------- DRUG AUTHORISATION ------------------>
             <p>Drug authorisation</p>
-            <div class="form_drugAuthorisation"></div>
+            <div class="form_drugAuthorisation">
+              <div class="form_drugAuthorisation_1">
+                <p class="drug_subTitle">
+                  Does this product have a Marketing Authorisation in your
+                  country?
+                </p>
+                <div>
+                  <input
+                    type="radio"
+                    id="No"
+                    name="radio1"
+                    value="No"
+                    class="radio"
+                  />
+                  <label for="No">No</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="Yes1"
+                    name="radio1"
+                    value="Yes1"
+                    class="radio"
+                  />
+                  <label for="Yes1">Yes but is on short supply </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="Yes2"
+                    name="radio1"
+                    value="Yes2"
+                    class="radio"
+                  />
+                  <label for="Yes2"
+                    >Yes but is not being commercialised by its holder</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="Yes3"
+                    name="radio1"
+                    value="Yes3"
+                    class="radio"
+                  />
+                  <label for="Yes3">Yes but is going to be discontinued</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="Yes4"
+                    name="radio1"
+                    value="Yes4"
+                    class="radio"
+                  />
+                  <label for="Yes4">Yes but I need a specific dose form</label>
+                </div>
+              </div>
+              <div class="form_drugAuthorisation_2">
+                <p class="drug_subTitle">
+                  Is this a controlled drug in your country?
+                </p>
+                <div>
+                  <input
+                    type="radio"
+                    id="YesControl"
+                    name="control"
+                    value="No"
+                    class="radio"
+                  />
+                  <label for="YesControl">Yes</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="NoControl"
+                    name="control"
+                    value="No"
+                    class="radio"
+                  />
+                  <label for="NoControl">No</label>
+                </div>
+              </div>
+              <div class="form_drugAuthorisation_3">
+                <p class="drug_subTitle">
+                  Do you have permission from the health authorities in your
+                  country to import this product in compliance with local
+                  regulations?
+                </p>
+                <div>
+                  <input
+                    type="radio"
+                    id="YesPerm"
+                    name="permission"
+                    value="No"
+                    class="radio"
+                  />
+                  <label for="YesPerm">Yes</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="NoPerm"
+                    name="permission"
+                    value="No"
+                    class="radio"
+                  />
+                  <label for="NoPerm">No</label>
+                </div>
+              </div>
+              <div class="form_drugAuthorisation_4">
+                <p class="drug_subTitle">
+                  * Are there any compulsory documents you need to be provided
+                  in order to import this product into your country?
+                </p>
+                <div></div>
+              </div>
+            </div>
             <input type="submit" />
           </form>
         </div>
