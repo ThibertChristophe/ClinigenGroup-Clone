@@ -183,19 +183,43 @@
             <div class="form_contactDetails">
               <div class="form_firstName">
                 <label for="first_name">First name*</label>
-                <input type="text" name="first_name" id="first_name" required />
+                <input
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  class="btn_petit"
+                  required
+                />
               </div>
               <div class="form_Surname">
                 <label for="sur_name">Surname*</label>
-                <input type="text" name="sur_name" id="sur_name" required />
+                <input
+                  type="text"
+                  name="sur_name"
+                  id="sur_name"
+                  class="btn_petit"
+                  required
+                />
               </div>
               <div class="form_email">
                 <label for="email">Email*</label>
-                <input type="text" name="email" id="email" required />
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  class="btn_petit"
+                  required
+                />
               </div>
               <div class="form_phone">
                 <label for="phone">Phone*</label>
-                <input type="text" name="phone" id="phone" required />
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  class="btn_petit"
+                  required
+                />
               </div>
             </div>
             <!---------------- YOUR ORGANISATION ------------------>
@@ -207,6 +231,7 @@
                   type="text"
                   name="organisation_name"
                   id="organisation_name"
+                  class="input_form btn_petit"
                   required
                 />
               </div>
@@ -217,6 +242,7 @@
                     type="text"
                     name="organisation_address1"
                     id="organisation_address1"
+                    class="btn_petit"
                     required
                   />
                 </div>
@@ -226,6 +252,7 @@
                     type="text"
                     name="organisation_address2"
                     id="organisation_address2"
+                    class="btn_petit"
                     required
                   />
                 </div>
@@ -235,6 +262,7 @@
                     type="text"
                     name="organisation_city"
                     id="organisation_city"
+                    class="btn_petit"
                     required
                   />
                 </div>
@@ -244,6 +272,7 @@
                     type="text"
                     name="organisation_postCode"
                     id="organisation_postCode"
+                    class="btn_petit"
                     required
                   />
                 </div>
@@ -266,47 +295,53 @@
                   <label for="genericName"
                     >Generic name/Active Ingredient *</label
                   >
-                  <input type="text" id="genericName" required />
+                  <input
+                    type="text"
+                    id="genericName"
+                    class="btn_petit"
+                    required
+                  />
                 </div>
                 <div class="brandName">
                   <label for="brandName">Brand name</label>
-                  <input type="text" id="brandName" />
+                  <input type="text" id="brandName" class="btn_petit" />
                 </div>
               </div>
               <div class="form_drugRequest_strengEtc">
                 <div class="strength">
                   <label for="strength">Strength *</label>
-                  <input type="text" id="strength" required />
+                  <input type="text" id="strength" class="btn_petit" required />
                 </div>
                 <div class="packSize">
                   <label for="packSize">Pack Size</label>
-                  <input type="text" id="packSize" />
+                  <input type="text" id="packSize" class="btn_petit" />
                 </div>
                 <div class="dosage">
                   <label for="dosage">Dosage Form *</label>
-                  <input type="text" id="dosage" required />
+                  <input type="text" id="dosage" class="btn_petit" required />
                 </div>
                 <div class="presentation">
                   <label for="presentation">Presentation</label>
-                  <input type="text" id="presentation" />
+                  <input type="text" id="presentation" class="btn_petit" />
                 </div>
                 <div class="quantity">
                   <label for="quantity">Required Quantity *</label>
-                  <input type="text" id="quantity" required />
+                  <input type="text" id="quantity" class="btn_petit" required />
                 </div>
                 <div class="target">
                   <label for="target">Required Target Price</label>
-                  <input type="text" id="target" required />
+                  <input type="text" id="target" class="btn_petit" required />
                 </div>
                 <div class="language">
                   <label for="language">Preferred Language</label>
-                  <input type="text" id="language" required />
+                  <input type="text" id="language" class="btn_petit" required />
                 </div>
               </div>
             </div>
             <!---------------- DRUG AUTHORISATION ------------------>
             <p>Drug authorisation</p>
             <div class="form_drugAuthorisation">
+              <!---------------- 1 ------------------>
               <div class="form_drugAuthorisation_1">
                 <p class="drug_subTitle">
                   Does this product have a Marketing Authorisation in your
@@ -365,6 +400,7 @@
                   <label for="Yes4">Yes but I need a specific dose form</label>
                 </div>
               </div>
+              <!---------------- 2 ------------------>
               <div class="form_drugAuthorisation_2">
                 <p class="drug_subTitle">
                   Is this a controlled drug in your country?
@@ -390,6 +426,7 @@
                   <label for="NoControl">No</label>
                 </div>
               </div>
+              <!---------------- 3 ------------------>
               <div class="form_drugAuthorisation_3">
                 <p class="drug_subTitle">
                   Do you have permission from the health authorities in your
@@ -417,6 +454,7 @@
                   <label for="NoPerm">No</label>
                 </div>
               </div>
+              <!---------------- 4 ------------------>
               <div class="form_drugAuthorisation_4">
                 <p class="drug_subTitle">
                   * Are there any compulsory documents you need to be provided
@@ -424,8 +462,112 @@
                 </p>
                 <div></div>
               </div>
+              <!---------------- 5------------------>
+              <div class="form_drugAuthorisation_5">
+                <p class="drug_subTitle">
+                  Which territories are you willing to accept products from?
+                </p>
+                <div>
+                  <input type="checkbox" id="EEA" name="EEA" class="radio" />
+                  <label for="EEA"
+                    >EEA and Mutual Recognition countries (Australia, Canada,
+                    Israel, Japan, New Zealand, Switzerland)</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="USA" name="USA" class="radio" />
+                  <label for="USA">USA</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="third"
+                    name="third"
+                    class="radio"
+                  />
+                  <label for="third">Third countries</label>
+                </div>
+              </div>
+              <!---------------- 6 ------------------>
+              <div class="form_drugAuthorisation_6">
+                <p class="drug_subTitle">
+                  * Is this product for a patient with a clinical need which
+                  cannot be met by a licensed product in your country?
+                </p>
+                <div>
+                  <input
+                    type="radio"
+                    id="YesPatient"
+                    name="patient"
+                    value="Yes"
+                    class="radio"
+                  />
+                  <label for="YesPatient">Yes</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="NoPatient"
+                    name="patient"
+                    value="No"
+                    class="radio"
+                  />
+                  <label for="NoPatient">No</label>
+                </div>
+              </div>
+              <!---------------- 7 ------------------>
+              <div class="form_drugAuthorisation_7">
+                <p class="drug_subTitle">* Please select from the below</p>
+                <div>
+                  <input
+                    type="radio"
+                    id="professional"
+                    name="Iam"
+                    value="professional"
+                    class="radio"
+                  />
+                  <label for="professional"
+                    >I am a healthcare professional</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="patient"
+                    name="Iam"
+                    value="patient"
+                    class="radio"
+                  />
+                  <label for="patient"
+                    >I am a patient or relative of a patient</label
+                  >
+                </div>
+              </div>
             </div>
-            <input type="submit" />
+            <!-------------- FIN FORM --------------------->
+            <div class="endForm">
+              <!------- TEXT AREA ------->
+              <div class="textArea">
+                <label for="story">
+                  Is there anything else we should be aware of or that might
+                  help us find your medicine faster?</label
+                >
+                <textarea id="story" name="story" rows="5" cols="33">
+                </textarea>
+              </div>
+              <div class="termOfUse">
+                <span
+                  >By clicking submit you agree to our
+                  <a href="">Terms of Use</a> and
+                  <a href="">Privacy Policy</a>.</span
+                >
+              </div>
+            </div>
+            <input
+              type="submit"
+              value="SUBMIT ENQUIRY"
+              class="btn_submit_form"
+            />
           </form>
         </div>
       </section>

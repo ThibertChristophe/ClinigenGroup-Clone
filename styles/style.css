@@ -438,6 +438,7 @@ h2 {
 .sectionShortageReport {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .sectionShortageReport .content h1 {
   margin-bottom: 20px;
@@ -465,23 +466,28 @@ h2 {
 }
 .reportForm .formShortage {
   width: 1100px;
-  padding-top: 40px;
+  padding: 40px 10px 0 10px;
 }
 .reportForm .formShortage label {
   margin-bottom: 10px;
 }
-.reportForm .formShortage input {
-  max-width: 330px;
+.reportForm .formShortage .btn_petit {
+  width: 95%;
   height: 50px;
   border: 1px solid #a1a1a1;
   border-radius: 5px;
   padding-left: 20px;
   font-size: 18px;
 }
-.reportForm .formShortage input:focus {
+.reportForm .formShortage .btn_petit:focus {
   border: 1px solid black;
   -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+@media all and (max-width: 770px) {
+  .reportForm .formShortage .btn_petit {
+    width: 100%;
+  }
 }
 .reportForm .formShortage .form_contactDetails {
   display: grid;
@@ -497,18 +503,29 @@ h2 {
   flex-direction: column;
   margin-bottom: 20px;
 }
+@media all and (max-width: 770px) {
+  .reportForm .formShortage .form_contactDetails {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
 .reportForm .formShortage .form_organisation {
   margin-bottom: 40px;
 }
 .reportForm .formShortage .form_organisation .form_organisation_name {
   display: flex;
   flex-direction: column;
-  width: 700px;
+  width: 98%;
   margin: 20px 0;
 }
-.reportForm .formShortage .form_organisation .form_organisation_name input {
+.reportForm .formShortage .form_organisation .form_organisation_name .input_form {
   display: block;
-  max-width: 680px;
+  width: 100%;
+}
+@media all and (max-width: 770px) {
+  .reportForm .formShortage .form_organisation .form_organisation_name {
+    width: 100%;
+  }
 }
 .reportForm .formShortage .form_organisation .form_organisation_address {
   display: grid;
@@ -523,20 +540,29 @@ h2 {
   flex-direction: column;
   margin-bottom: 20px;
 }
+@media all and (max-width: 770px) {
+  .reportForm .formShortage .form_organisation .form_organisation_address {
+    grid-template-columns: 1fr;
+  }
+}
 .reportForm .formShortage .form_organisation .form_organisation_country {
   display: flex;
   flex-direction: column;
-  width: 700px;
 }
 .reportForm .formShortage .form_organisation .form_organisation_country select {
   display: block;
-  max-width: 330px;
+  max-width: 48%;
   height: 50px;
   border: 1px solid #a1a1a1;
   border-radius: 5px;
   padding-left: 20px;
   font-size: 18px;
   margin-bottom: 20px;
+}
+@media all and (max-width: 770px) {
+  .reportForm .formShortage .form_organisation .form_organisation_country select {
+    max-width: 100%;
+  }
 }
 .reportForm .formShortage .form_drugRequest_name {
   margin: 20px 0;
@@ -546,11 +572,12 @@ h2 {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  width: 98%;
 }
 .reportForm .formShortage .form_drugRequest_name .genericName input,
 .reportForm .formShortage .form_drugRequest_name .brandName input {
   display: block;
-  max-width: 680px;
+  width: 100%;
 }
 .reportForm .formShortage .form_drugRequest_strengEtc {
   display: grid;
@@ -569,10 +596,16 @@ h2 {
   flex-direction: column;
   margin-bottom: 20px;
 }
+@media all and (max-width: 770px) {
+  .reportForm .formShortage .form_drugRequest_strengEtc {
+    grid-template-columns: 1fr;
+  }
+}
 .reportForm .formShortage .form_drugAuthorisation {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  margin-bottom: 55px;
 }
 .reportForm .formShortage .form_drugAuthorisation .drug_subTitle {
   font-weight: bold;
@@ -581,6 +614,14 @@ h2 {
 .reportForm .formShortage .form_drugAuthorisation .form_drugAuthorisation_1 {
   display: flex;
   flex-direction: column;
+}
+.reportForm .formShortage .form_drugAuthorisation .form_drugAuthorisation_7 {
+  max-height: 100px;
+}
+@media all and (max-width: 770px) {
+  .reportForm .formShortage .form_drugAuthorisation {
+    grid-template-columns: 1fr;
+  }
 }
 .reportForm .formShortage .radio {
   vertical-align: middle;
@@ -592,6 +633,54 @@ h2 {
   .reportForm .formShortage {
     max-width: 700px;
   }
+}
+@media all and (max-width: 770px) {
+  .reportForm .formShortage {
+    max-width: 500px;
+  }
+}
+
+.textArea {
+  display: flex;
+  flex-direction: column;
+}
+.textArea textarea {
+  border: 1px solid #a1a1a1;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+.textArea textarea:focus {
+  border: 1px solid black;
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.termOfUse {
+  margin: 20px 0;
+}
+.termOfUse a {
+  color: #7239ff;
+}
+.termOfUse a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.btn_submit_form {
+  background-color: #8cdb1f;
+  border-radius: 20px;
+  color: #270072;
+  font-weight: bold;
+  cursor: pointer;
+  height: 40px;
+  width: 220px;
+  margin-bottom: 70px;
+  transition: all 0.2s ease;
+}
+.btn_submit_form:hover {
+  background-color: #270072;
+  color: white;
 }
 
 .login_main {

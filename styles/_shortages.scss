@@ -1,6 +1,7 @@
 .sectionShortageReport {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 10px;
   .content {
     h1 {
       margin-bottom: 20px;
@@ -24,15 +25,16 @@
   p {
     font-weight: bold;
   }
+
   .formShortage {
     // formulaire
     width: 1100px;
-    padding-top: 40px;
+    padding: 40px 10px 0 10px;
     label {
       margin-bottom: 10px;
     }
-    input {
-      max-width: 330px;
+    .btn_petit {
+      width: 95%;
       height: 50px;
       border: 1px solid rgb(161, 161, 161);
       border-radius: 5px;
@@ -42,6 +44,9 @@
         border: 1px solid black;
         -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
         box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+      }
+      @media all and (max-width: 770px) {
+        width: 100%;
       }
     }
     // Partie contact
@@ -58,6 +63,10 @@
         flex-direction: column;
         margin-bottom: 20px;
       }
+      @media all and (max-width: 770px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+      }
     }
     // Partie Your organisation
     .form_organisation {
@@ -65,12 +74,15 @@
       .form_organisation_name {
         display: flex;
         flex-direction: column;
-        width: 700px;
-        input {
+        width: 98%;
+        .input_form {
           display: block;
-          max-width: 680px;
+          width: 100%;
         }
         margin: 20px 0;
+        @media all and (max-width: 770px) {
+          width: 100%;
+        }
       }
       .form_organisation_address {
         display: grid;
@@ -84,20 +96,25 @@
           flex-direction: column;
           margin-bottom: 20px;
         }
+        @media all and (max-width: 770px) {
+          grid-template-columns: 1fr;
+        }
       }
       .form_organisation_country {
         display: flex;
         flex-direction: column;
-        width: 700px;
         select {
           display: block;
-          max-width: 330px;
+          max-width: 48%;
           height: 50px;
           border: 1px solid rgb(161, 161, 161);
           border-radius: 5px;
           padding-left: 20px;
           font-size: 18px;
           margin-bottom: 20px;
+          @media all and (max-width: 770px) {
+            max-width: 100%;
+          }
         }
       }
     }
@@ -109,9 +126,10 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
+        width: 98%;
         input {
           display: block;
-          max-width: 680px;
+          width: 100%;
         }
       }
     }
@@ -131,11 +149,15 @@
         flex-direction: column;
         margin-bottom: 20px;
       }
+      @media all and (max-width: 770px) {
+        grid-template-columns: 1fr;
+      }
     }
     .form_drugAuthorisation {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(4, 1fr);
+      grid-template-rows: repeat(4, auto);
+      margin-bottom: 55px;
       .drug_subTitle {
         font-weight: bold;
         margin: 15px 0;
@@ -143,6 +165,12 @@
       .form_drugAuthorisation_1 {
         display: flex;
         flex-direction: column;
+      }
+      .form_drugAuthorisation_7 {
+        max-height: 100px;
+      }
+      @media all and (max-width: 770px) {
+        grid-template-columns: 1fr;
       }
     }
     .radio {
@@ -154,5 +182,44 @@
     @media all and (max-width: 1200px) {
       max-width: 700px;
     }
+    @media all and (max-width: 770px) {
+      max-width: 500px;
+    }
+  }
+}
+.textArea {
+  display: flex;
+  flex-direction: column;
+  textarea {
+    border: 1px solid rgb(161, 161, 161);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    &:focus {
+      border: 1px solid black;
+      -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+.termOfUse {
+  margin: 20px 0;
+  a {
+    color: $violetClair;
+    &:hover {
+      color: blue;
+      text-decoration: underline;
+    }
+  }
+}
+.btn_submit_form {
+  @include btn_vert;
+  height: 40px;
+  width: 220px;
+  margin-bottom: 70px;
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: $bleuFonce;
+    color: white;
   }
 }
