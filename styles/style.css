@@ -217,6 +217,11 @@
   margin: 0 auto;
   width: 700px;
 }
+@media all and (max-width: 770px) {
+  .hamburger_menu .hamburger_menu_link {
+    max-width: 500px;
+  }
+}
 .hamburger_menu .hamburger_menu_link .hamburger_menu_link_shortage,
 .hamburger_menu .hamburger_menu_link .hamburger_menu_link_help,
 .hamburger_menu .hamburger_menu_link .hamburger_menu_link_about {
@@ -225,7 +230,7 @@
   color: #270072;
   font-weight: bold;
   font-size: 15px;
-  background: url(/img/dropdown.svg) no-repeat 660px;
+  background: url(/img/dropdown.svg) no-repeat right;
   text-align: left;
   cursor: pointer;
 }
@@ -365,6 +370,11 @@
     max-width: 700px;
   }
 }
+@media all and (max-width: 770px) {
+  .sectionAbout {
+    max-width: 500px;
+  }
+}
 
 .fil {
   display: flex;
@@ -465,6 +475,11 @@ h2 {
 @media all and (max-width: 1200px) {
   .sectionShortageReport {
     max-width: 700px;
+  }
+}
+@media all and (max-width: 770px) {
+  .sectionShortageReport {
+    max-width: 500px;
   }
 }
 
@@ -696,8 +711,23 @@ h2 {
 }
 
 .tabledrug {
-  width: 700px;
+  width: 1100px;
   margin: 20px auto;
+}
+@media all and (max-width: 1200px) {
+  .tabledrug {
+    max-width: 900px;
+  }
+}
+@media all and (max-width: 991px) {
+  .tabledrug {
+    max-width: 700px;
+  }
+}
+@media all and (max-width: 770px) {
+  .tabledrug {
+    max-width: 500px;
+  }
 }
 .tabledrug .entete_table {
   display: flex;
@@ -717,7 +747,13 @@ h2 {
   margin-left: 10px;
   color: #495057;
 }
+@media all and (max-width: 770px) {
+  .tabledrug .entete_table {
+    flex-wrap: wrap;
+  }
+}
 .tabledrug table {
+  display: block;
   border-collapse: collapse;
 }
 .tabledrug table tr {
@@ -730,6 +766,7 @@ h2 {
   text-align: left;
   padding: 1rem 1rem 0;
   border-bottom: 9px solid white;
+  font-weight: normal;
 }
 .tabledrug table .table_ligne {
   border-bottom: 9px solid white;
@@ -755,6 +792,15 @@ h2 {
 }
 .tabledrug table td .table_link_request:hover {
   text-decoration: underline;
+  color: black;
+}
+.tabledrug table td .table_link_request::after {
+  content: url(/img/arrow.svg);
+}
+@media all and (max-width: 770px) {
+  .tabledrug table {
+    overflow-x: scroll;
+  }
 }
 
 .login_main {

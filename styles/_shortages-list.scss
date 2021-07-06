@@ -1,6 +1,15 @@
 .tabledrug {
-  width: 700px;
+  width: 1100px;
   margin: 20px auto;
+  @media all and (max-width: 1200px) {
+    max-width: 900px;
+  }
+  @media all and (max-width: 991px) {
+    max-width: 700px;
+  }
+  @media all and (max-width: 770px) {
+    max-width: 500px;
+  }
   .entete_table {
     display: flex;
     flex-wrap: nowrap;
@@ -18,8 +27,12 @@
       margin-left: 10px;
       color: $grisFont;
     }
+    @media all and (max-width: 770px) {
+      flex-wrap: wrap;
+    }
   }
   table {
+    display: block;
     // retire les séparation entre cellule d'une meme ligne
     border-collapse: collapse;
     tr {
@@ -32,6 +45,7 @@
       text-align: left;
       padding: 1rem 1rem 0;
       border-bottom: 9px solid white;
+      font-weight: normal;
     }
     .table_ligne {
       // astuce pour créer des séparation où on veut
@@ -57,8 +71,15 @@
         font-weight: bold;
         &:hover {
           text-decoration: underline;
+          color: black;
+        }
+        &::after {
+          content: url(/img/arrow.svg);
         }
       }
+    }
+    @media all and (max-width: 770px) {
+      overflow-x: scroll;
     }
   }
 }

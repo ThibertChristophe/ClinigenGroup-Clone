@@ -172,6 +172,9 @@
     padding: 20px 20px 20px 0;
     margin: 0 auto;
     width: 700px;
+    @media all and (max-width: 770px) {
+      max-width: 500px;
+    }
     .hamburger_menu_link_shortage,
     .hamburger_menu_link_help,
     .hamburger_menu_link_about {
@@ -180,7 +183,7 @@
       color: #270072;
       font-weight: bold;
       font-size: 15px;
-      background: url(/img/dropdown.svg) no-repeat 660px;
+      background: url(/img/dropdown.svg) no-repeat right;
       text-align: left;
       cursor: pointer;
     }
@@ -194,6 +197,7 @@
 .hamburger_sousMenu_about {
   display: none;
   margin-top: 20px;
+
   li {
     background-color: rgb(238, 238, 238);
     // padding: 20px 0 20px 20px;
