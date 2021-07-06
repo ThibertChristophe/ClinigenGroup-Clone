@@ -233,29 +233,41 @@
   margin-bottom: 20px;
 }
 
-.hamburger_sousMenu {
+.hamburger_sousMenu_shortages,
+.hamburger_sousMenu_help,
+.hamburger_sousMenu_about {
   display: none;
   margin-top: 20px;
 }
-.hamburger_sousMenu li {
+.hamburger_sousMenu_shortages li,
+.hamburger_sousMenu_help li,
+.hamburger_sousMenu_about li {
   background-color: #eeeeee;
   width: 700px;
   height: 55px;
 }
-.hamburger_sousMenu li a {
+.hamburger_sousMenu_shortages li a,
+.hamburger_sousMenu_help li a,
+.hamburger_sousMenu_about li a {
   display: block;
   width: 100%;
   height: 100%;
   padding: 16px 0 0 20px;
   background: url(/img/arrow.svg) no-repeat 660px;
 }
-.hamburger_sousMenu li a:active {
+.hamburger_sousMenu_shortages li a:active,
+.hamburger_sousMenu_help li a:active,
+.hamburger_sousMenu_about li a:active {
   color: #7239ff;
 }
-.hamburger_sousMenu li:not(:nth-last-child(1)) {
+.hamburger_sousMenu_shortages li:not(:nth-last-child(1)),
+.hamburger_sousMenu_help li:not(:nth-last-child(1)),
+.hamburger_sousMenu_about li:not(:nth-last-child(1)) {
   border-bottom: 1px solid white;
 }
-.hamburger_sousMenu li:hover {
+.hamburger_sousMenu_shortages li:hover,
+.hamburger_sousMenu_help li:hover,
+.hamburger_sousMenu_about li:hover {
   background-color: #e2e2e2;
 }
 
