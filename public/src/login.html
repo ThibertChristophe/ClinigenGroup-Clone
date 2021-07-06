@@ -8,7 +8,7 @@
       name="description"
       content="The Clinigen Direct Love Your Pharmacist Awards, set up to recognise and celebrate the exceptional accomplishments of hospital pharmacists, are now open ..."
     />
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../src/styles/style.css" />
     <title>Clinigen Direct - Global</title>
   </head>
   <body>
@@ -16,7 +16,7 @@
     <header>
       <div class="menu">
         <a href="index.html"
-          ><img src="/img/clinigen-logo.svg" alt="" class="logo"
+          ><img src="../img/clinigen-logo.svg" alt="" class="logo"
         /></a>
         <div class="lienMenu">
           <nav>
@@ -82,7 +82,7 @@
             </ul>
           </nav>
           <span class="flag"
-            ><img src="/img/en-gb.png" alt="drapeau anglais" srcset=""
+            ><img src="../img/en-gb.png" alt="drapeau anglais" srcset=""
           /></span>
         </div>
         <a href="login.html" class="signIn">Sign in</a>
@@ -97,7 +97,7 @@
         />
         <!-------------------------------- HAMBURGER --------------------------------------->
         <div class="hamburger">
-          <button><img src="/img/download.svg" alt="" srcset="" /></button>
+          <button><img src="../img/download.svg" alt="" srcset="" /></button>
         </div>
         <a href="login.html" class="searchSignIn">SIGN IN</a>
       </div>
@@ -106,6 +106,7 @@
           <ul>
             <li class="hamburger_menu_link">
               <button class="hamburger_menu_link_shortage">SHORTAGES</button>
+              <!-- <a href="#" class="hamburger_menu_link_shortage">SHORTAGES</a> -->
               <div class="hamburger_sousMenu_shortages">
                 <ul>
                   <li>
@@ -115,7 +116,7 @@
                     <a href="shortages-list.html">UK drug shortages</a>
                   </li>
                   <li class="hamburger_sousMenu_li">
-                    <a href="shortage.html">Report a shortage</a>
+                    <a href="">Report a shortage</a>
                   </li>
                   <li class="hamburger_sousMenu_li"><a href="">Insights</a></li>
                 </ul>
@@ -161,7 +162,7 @@
             </li>
             <li class="hamburger_menu_link">
               <span class="flag"
-                ><img src="/img/en-gb.png" alt="drapeau anglais" srcset=""
+                ><img src="../img/en-gb.png" alt="drapeau anglais" srcset=""
               /></span>
             </li>
           </ul>
@@ -171,83 +172,72 @@
     </header>
     <main>
       <!--------------------------------------- CONTENU ------------------------------------------------------>
-      <section class="sectionAbout">
-        <div class="fil">
-          <nav>
-            <ol>
-              <li><a href="index.html">Home</a></li>
-              <li><span class="filActif">About shortage</span></li>
-            </ol>
-          </nav>
-        </div>
-        <div class="titreAndButton">
-          <h1>About drug shortages</h1>
-          <h2>
-            Helping healtcare professionals source alternatives effectively.
-          </h2>
-          <input
-            type="button"
-            value="VIEW CURRENT UK DRUG SHORTAGES LIST"
-            class="btn_shortages"
-          />
-        </div>
-        <div class="content">
-          <h3>The drug shortages challenge</h3>
+      <section>
+        <div class="login_main">
+          <h1>Cliniport upgrade coming soon</h1>
           <p>
-            We understand that the process of sourcing alternative medicines due
-            to drug shortages is a major issue for pharmacists and procurement
-            specialists across the UK. The complexities of international supply
-            and delivery can complicate securing an alternative quickly and
-            safely.
-          </p>
-          <p>
-            The impact of procuring alternatives is having a direct impact on
-            patients, pharmacies and the NHS1, with current research suggesting
-            <strong
-              >some pharmacists are spending as much as 1 day per week dealing
-              with medicine shortages2.</strong
+            <strong>
+              We are updating the Cliniport platform to deliver a better digital
+              experience for our customers.</strong
             >
           </p>
-          <h3>Our solution</h3>
-          <p>
-            We believe that healthcare professionals should be able to quickly,
-            easily and safely find alternatives to medicines that are in short
-            supply, with total confidence in its quality. As the threat of
-            counterfeit medicine continues to grow, this is no easy task. We
-            call it getting the right medicine to the right patient at the right
-            time.
-          </p>
-          <p>
-            It is for this reason we have launched our own searchable, 2019 UK
-            Drug Shortage list that provides information about the latest
-            shortage supply problems and when possible, a suitable alternative
-            medicine.
-          </p>
-          <p>Use our UK drug shortages platform to:</p>
-          <ul>
-            <li>Stay current</li>
-            <li>Save time</li>
-            <li>Maintain continuity of supply</li>
-          </ul>
-          <ol>
-            <li>
-              ‘Supply chain and shortages’ [Online] Viewed September 2019
-              <a
-                href="https://psnc.org.uk/dispensing-supply/supply-chain/"
-                target="_blank"
-                >https://psnc.org.uk/dispensing-supply/supply-chain/</a
-              >
-            </li>
-            <li>
-              The Times. ‘Scottish pharmacists losing one day a week getting
-              around medicine shortages’ [Online] Viewed September 2019
-              <a
-                href="https://www.thetimes.co.uk/article/scottish-pharmacists-losing-one-day-a-week-getting-around-medicine-shortages-pzq388wl2#"
-                target="_blank"
-                >https://www.thetimes.co.uk/article/scottish-pharmacists-losing-one-day-a-week-getting-around-medicine-shortages-pzq388wl2#</a
-              >
-            </li>
-          </ol>
+          <a href="http://">Find out more about the upgrade here.</a>
+        </div>
+        <div class="connect">
+          <div class="connect_direct">
+            <img src="../img/clinigen-logo.svg" alt="" />
+            <h4>Your source for hard to find medicines</h4>
+            <input type="button" value="SIGN IN TO CLINIGEN DIRECT" />
+            <p>
+              <strong>New to Clinigen Direct? Register as a user.</strong> The
+              Clinigen Direct service is for the support of healthcare
+              professionals only. We will review and validate the information
+              you provide when registering an account.
+            </p>
+            <input type="button" value="REGISTER" class="btn_register" />
+          </div>
+          <div class="connect_cliniport">
+            <img src="../img/clinport-logo-green.svg" alt="" />
+            <h4>Your source for hard to find medicines</h4>
+            <input
+              type="button"
+              value="SIGN IN TO CLINIPORT"
+              class="btn_cliniport"
+            />
+            <p><strong>Do you require access to CLiniport?</strong></p>
+            <a href="http://">Get in touch to create an account.</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="speakLangage">
+        <div class="speakLanguageLogin">
+          <div class="speakLanguage_L">
+            <h2>We speak your language</h2>
+            <p>
+              Got a question? Get in touch and let us help you improve patient
+              outcomes.
+            </p>
+            <ul>
+              <li>
+                <img src="../img/phone.svg" alt="Phone" srcset="" />+44 (0) 1932
+                824 100
+              </li>
+              <li>
+                <img src="../img/Fax.svg" alt="Fax" srcset="" />+44 (0) 1932 824
+                300
+              </li>
+              <li>
+                <img src="../img/mail.svg" alt="Mail" srcset="" /><a
+                  href="mailto:info@clinigengroup.com"
+                  >info@clinigengroup.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="speakLanguage_R">
+            <img src="../img/Clinigen Assets-01.svg" alt="" />
+          </div>
         </div>
       </section>
     </main>
@@ -290,7 +280,7 @@
             </ul>
           </div>
           <div class="footer_container_card">
-            <img src="/img/clinigen-logo-inverted.svg" alt="" srcset="" />
+            <img src="../img/clinigen-logo-inverted.svg" alt="" srcset="" />
             <ul>
               <li>+32 (0) 2 200 86 79</li>
               <li>+32 (0) 2 200 86 79</li>
@@ -306,8 +296,8 @@
         <div class="copyright"><p>© Copyright 2020 Clinigen Group plc</p></div>
       </div>
     </footer>
-    <script src="/js/header.js"></script>
-    <script src="/js/_menuFixed.js"></script>
-    <script src="/js/_hamburger.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/_menuFixed.js"></script>
+    <script src="../js/_hamburger.js"></script>
   </body>
 </html>

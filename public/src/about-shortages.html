@@ -8,7 +8,7 @@
       name="description"
       content="The Clinigen Direct Love Your Pharmacist Awards, set up to recognise and celebrate the exceptional accomplishments of hospital pharmacists, are now open ..."
     />
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../src/styles/style.css" />
     <title>Clinigen Direct - Global</title>
   </head>
   <body>
@@ -16,7 +16,7 @@
     <header>
       <div class="menu">
         <a href="index.html"
-          ><img src="/img/clinigen-logo.svg" alt="" class="logo"
+          ><img src="../img/clinigen-logo.svg" alt="" class="logo"
         /></a>
         <div class="lienMenu">
           <nav>
@@ -82,7 +82,7 @@
             </ul>
           </nav>
           <span class="flag"
-            ><img src="/img/en-gb.png" alt="drapeau anglais" srcset=""
+            ><img src="../img/en-gb.png" alt="drapeau anglais" srcset=""
           /></span>
         </div>
         <a href="login.html" class="signIn">Sign in</a>
@@ -97,7 +97,7 @@
         />
         <!-------------------------------- HAMBURGER --------------------------------------->
         <div class="hamburger">
-          <button><img src="/img/download.svg" alt="" srcset="" /></button>
+          <button><img src="../img/download.svg" alt="" srcset="" /></button>
         </div>
         <a href="login.html" class="searchSignIn">SIGN IN</a>
       </div>
@@ -161,7 +161,7 @@
             </li>
             <li class="hamburger_menu_link">
               <span class="flag"
-                ><img src="/img/en-gb.png" alt="drapeau anglais" srcset=""
+                ><img src="../img/en-gb.png" alt="drapeau anglais" srcset=""
               /></span>
             </li>
           </ul>
@@ -171,154 +171,83 @@
     </header>
     <main>
       <!--------------------------------------- CONTENU ------------------------------------------------------>
-      <section class="sectionShortageReport">
+      <section class="sectionAbout">
         <div class="fil">
           <nav>
             <ol>
               <li><a href="index.html">Home</a></li>
-              <li><span class="filActif">UK drug shortages list</span></li>
+              <li><span class="filActif">About shortage</span></li>
             </ol>
           </nav>
         </div>
-        <div class="content">
-          <h1>UK drug shortages list</h1>
-          <p>
-            The Clinigen Direct UK drug shortages platform is for the support of
-            UK healthcare professionals only. It provides a regularly updated,
-            fully comprehensive UK drug shortage list and highlights the
-            existing alternative available. By reviewing the content below you
-            are confirming you are a UK healthcare professional.
-          </p>
-          <p>
-            Although Clinigen Direct has performed an alternative assessment of
-            these products, please note, it is the prescriber’s responsibility
-            to ensure that the product is suitable for their patient. Due to the
-            below lines not being general stock lines we are unable to cancel
-            any purchase orders once the order has been placed.
-          </p>
+        <div class="titreAndButton">
+          <h1>About drug shortages</h1>
+          <h2>
+            Helping healtcare professionals source alternatives effectively.
+          </h2>
+          <input
+            type="button"
+            value="VIEW CURRENT UK DRUG SHORTAGES LIST"
+            class="btn_shortages"
+          />
         </div>
-      </section>
-      <!------------------------------------- TABLE ------------------------------------>
-      <section>
-        <div class="tabledrug">
-          <div class="entete_table">
-            <div class="showing">
-              <strong>Showing</strong> <span class="number">0 of 0</span>
-            </div>
-            <!----- COMBO ----->
-            <div class="combo_table">
-              <label for="filtre"><strong>Sort by</strong></label>
-              <select name="filtre" id="filtre">
-                <option value="GenAZ">Generic A-Z</option>
-                <option value="AltAZ">Alternative A-Z</option>
-                <option value="Status">Status</option>
-              </select>
-            </div>
-          </div>
-          <table>
-            <thead>
-              <tr>
-                <th>IN SHORTAGE</th>
-                <th>ALTERNATIVE</th>
-                <th>FORM AND PACK SIZE</th>
-                <th>DATE START</th>
-                <th>STATUS</th>
-                <th>LINKS</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="table_ligne">
-                <td>Acetylcysteine</td>
-                <td>
-                  <a href="" class="table_link_alt"
-                    >Acetylcysteine 200 mg/mL (2g/10mL)</a
-                  >
-                </td>
-                <td>Concentrate for Solution for Infusion, 10 x 10mL</td>
-                <td>March 2021</td>
-                <td>Current</td>
-                <td>
-                  <a href="" class="table_link_request">Request medicine</a>
-                </td>
-              </tr>
-              <tr class="table_ligne">
-                <td>Bleomycin Sulfate</td>
-                <td>
-                  <a href="" class="table_link_alt"
-                    >Bleomycin Sulfate 15 Units</a
-                  >
-                </td>
-                <td>Lyophilisate for Solution for Injection, 1 x 1</td>
-                <td>March 2021</td>
-                <td>Current</td>
-                <td>
-                  <a href="" class="table_link_request">Request medicine</a>
-                </td>
-              </tr>
-              <tr class="table_ligne">
-                <td>Bleomycin Sulfate</td>
-                <td>
-                  <a href="" class="table_link_alt"
-                    >Bleomycin Sulfate 15 000 IU</a
-                  >
-                </td>
-                <td>Powder for Solution for Injection/Infusion, 1 x 1</td>
-                <td>March 2021</td>
-                <td>Current</td>
-                <td>
-                  <a href="" class="table_link_request">Request medicine</a>
-                </td>
-              </tr>
-              <tr class="table_ligne">
-                <td>Clonidine</td>
-                <td>
-                  <a href="" class="table_link_alt">Clonidine 2.5mg</a>
-                </td>
-                <td>Transdermal Patch 1 x 2</td>
-                <td>June 2021</td>
-                <td>Current</td>
-                <td>
-                  <a href="" class="table_link_request">Request medicine</a>
-                </td>
-              </tr>
-              <tr class="table_ligne">
-                <td>Clonidine</td>
-                <td>
-                  <a href="" class="table_link_alt">Clonidine 5mg</a>
-                </td>
-                <td>Transdermal Patch 1 x 2</td>
-                <td>June 2021</td>
-                <td>Current</td>
-                <td>
-                  <a href="" class="table_link_request">Request medicine</a>
-                </td>
-              </tr>
-              <tr class="table_ligne">
-                <td>Clonidine</td>
-                <td>
-                  <a href="" class="table_link_alt">Clonidine 0.3mg/24 HR</a>
-                </td>
-                <td>Transdermal Patch 1 x 4</td>
-                <td>June 2021</td>
-                <td>Current</td>
-                <td>
-                  <a href="" class="table_link_request">Request medicine</a>
-                </td>
-              </tr>
-              <tr class="table_ligne">
-                <td>Ethinyl Estradiol</td>
-                <td>
-                  <a href="" class="table_link_alt">Ethinyl Estradiol 10mcg</a>
-                </td>
-                <td>Tablet, 1 x 25</td>
-                <td>March 2021</td>
-                <td>Current</td>
-                <td>
-                  <a href="" class="table_link_request">Request medicine</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="content">
+          <h3>The drug shortages challenge</h3>
+          <p>
+            We understand that the process of sourcing alternative medicines due
+            to drug shortages is a major issue for pharmacists and procurement
+            specialists across the UK. The complexities of international supply
+            and delivery can complicate securing an alternative quickly and
+            safely.
+          </p>
+          <p>
+            The impact of procuring alternatives is having a direct impact on
+            patients, pharmacies and the NHS1, with current research suggesting
+            <strong
+              >some pharmacists are spending as much as 1 day per week dealing
+              with medicine shortages2.</strong
+            >
+          </p>
+          <h3>Our solution</h3>
+          <p>
+            We believe that healthcare professionals should be able to quickly,
+            easily and safely find alternatives to medicines that are in short
+            supply, with total confidence in its quality. As the threat of
+            counterfeit medicine continues to grow, this is no easy task. We
+            call it getting the right medicine to the right patient at the right
+            time.
+          </p>
+          <p>
+            It is for this reason we have launched our own searchable, 2019 UK
+            Drug Shortage list that provides information about the latest
+            shortage supply problems and when possible, a suitable alternative
+            medicine.
+          </p>
+          <p>Use our UK drug shortages platform to:</p>
+          <ul>
+            <li>Stay current</li>
+            <li>Save time</li>
+            <li>Maintain continuity of supply</li>
+          </ul>
+          <ol>
+            <li>
+              ‘Supply chain and shortages’ [Online] Viewed September 2019
+              <a
+                href="https://psnc.org.uk/dispensing-supply/supply-chain/"
+                target="_blank"
+                >https://psnc.org.uk/dispensing-supply/supply-chain/</a
+              >
+            </li>
+            <li>
+              The Times. ‘Scottish pharmacists losing one day a week getting
+              around medicine shortages’ [Online] Viewed September 2019
+              <a
+                href="https://www.thetimes.co.uk/article/scottish-pharmacists-losing-one-day-a-week-getting-around-medicine-shortages-pzq388wl2#"
+                target="_blank"
+                >https://www.thetimes.co.uk/article/scottish-pharmacists-losing-one-day-a-week-getting-around-medicine-shortages-pzq388wl2#</a
+              >
+            </li>
+          </ol>
         </div>
       </section>
     </main>
@@ -356,12 +285,12 @@
             <h5>Enquiries</h5>
             <ul>
               <li><a href="">List your product on Clinigen Direct</a></li>
-              <li><a href="">Report a shortage</a></li>
+              <li><a href="shortage.html">Report a shortage</a></li>
               <li><a href="">Sourcing enquiry</a></li>
             </ul>
           </div>
           <div class="footer_container_card">
-            <img src="/img/clinigen-logo-inverted.svg" alt="" srcset="" />
+            <img src="../img/clinigen-logo-inverted.svg" alt="" srcset="" />
             <ul>
               <li>+32 (0) 2 200 86 79</li>
               <li>+32 (0) 2 200 86 79</li>
@@ -377,9 +306,8 @@
         <div class="copyright"><p>© Copyright 2020 Clinigen Group plc</p></div>
       </div>
     </footer>
-    <script src="/js/header.js"></script>
-    <script src="/js/_menuFixed.js"></script>
-    <script src="/js/_hamburger.js"></script>
-    <script src="/js/_table_listDrug.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/_menuFixed.js"></script>
+    <script src="../js/_hamburger.js"></script>
   </body>
 </html>
