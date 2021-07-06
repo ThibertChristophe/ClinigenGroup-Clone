@@ -1,0 +1,63 @@
+.tabledrug {
+  width: 700px;
+  margin: 20px auto;
+  .entete_table {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding-bottom: 20px;
+    select {
+      height: 50px;
+      border: 1px solid rgb(161, 161, 161);
+      border-radius: 5px;
+      width: 370px;
+      padding-left: 20px;
+      font-size: 18px;
+      margin-left: 10px;
+    }
+  }
+  table {
+    // retire les séparation entre cellule d'une meme ligne
+    border-collapse: collapse;
+    tr {
+      display: table-row;
+      width: 100px;
+    }
+    th {
+      display: table-cell;
+      color: $bleuFonce;
+      text-align: left;
+      padding: 1rem 1rem 0;
+      border-bottom: 9px solid white;
+    }
+    .table_ligne {
+      // astuce pour créer des séparation où on veut
+      border-bottom: 9px solid white;
+      padding: 5px 0;
+      background-color: $fondGris;
+      &:hover {
+        background-color: rgb(228, 228, 228);
+      }
+    }
+    td {
+      //   border: 1px solid blue;
+      padding: 5px 10px 5px 10px;
+      vertical-align: top;
+      .table_link_alt {
+        color: black;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .table_link_request {
+        color: $bleuFonce;
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -695,6 +695,67 @@ h2 {
   color: white;
 }
 
+.tabledrug {
+  width: 700px;
+  margin: 20px auto;
+}
+.tabledrug .entete_table {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+}
+.tabledrug .entete_table select {
+  height: 50px;
+  border: 1px solid #a1a1a1;
+  border-radius: 5px;
+  width: 370px;
+  padding-left: 20px;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.tabledrug table {
+  border-collapse: collapse;
+}
+.tabledrug table tr {
+  display: table-row;
+  width: 100px;
+}
+.tabledrug table th {
+  display: table-cell;
+  color: #270072;
+  text-align: left;
+  padding: 1rem 1rem 0;
+  border-bottom: 9px solid white;
+}
+.tabledrug table .table_ligne {
+  border-bottom: 9px solid white;
+  padding: 5px 0;
+  background-color: #f4f4f4;
+}
+.tabledrug table .table_ligne:hover {
+  background-color: #e4e4e4;
+}
+.tabledrug table td {
+  padding: 5px 10px 5px 10px;
+  vertical-align: top;
+}
+.tabledrug table td .table_link_alt {
+  color: black;
+}
+.tabledrug table td .table_link_alt:hover {
+  text-decoration: underline;
+}
+.tabledrug table td .table_link_request {
+  color: #270072;
+  font-weight: bold;
+}
+.tabledrug table td .table_link_request:hover {
+  text-decoration: underline;
+}
+
 .login_main {
   max-width: 1100px;
   background-color: white;
