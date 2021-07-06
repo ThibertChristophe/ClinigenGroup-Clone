@@ -546,6 +546,11 @@
       @include btn_transparent;
       width: 400px;
       height: 40px;
+      padding-bottom: 2px;
+      &:hover {
+        background-color: white;
+        color: $bleuFonce;
+      }
     }
     @media all and (max-width: 770px) {
       width: 550px;

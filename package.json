@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ThibertChristophe/ClinigenGroup-Clone#readme",
   "dependencies": {
+    "firebase": "^8.7.0",
     "scss": "^0.2.4"
   },
   "devDependencies": {

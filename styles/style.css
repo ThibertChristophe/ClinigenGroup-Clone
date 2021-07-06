@@ -1613,8 +1613,14 @@ h2 {
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.2s ease;
   width: 400px;
   height: 40px;
+  padding-bottom: 2px;
+}
+.helpUs .helpUs_container input:hover {
+  background-color: white;
+  color: #270072;
 }
 @media all and (max-width: 770px) {
   .helpUs .helpUs_container {
