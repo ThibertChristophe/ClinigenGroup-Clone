@@ -795,7 +795,7 @@ h2 {
   color: black;
 }
 .tabledrug table td .table_link_request::after {
-  content: url(/img/arrow.svg);
+  content: url(/public/img/arrow.svg);
 }
 @media all and (max-width: 770px) {
   .tabledrug table {
