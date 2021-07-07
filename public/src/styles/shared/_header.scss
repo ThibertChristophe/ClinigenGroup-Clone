@@ -20,7 +20,7 @@
       align-items: center;
       margin: 0 25px 0 0;
       padding-right: 25px;
-      background: url(/public/img/dropdown.svg) no-repeat right;
+      background: url(../../img/dropdown.svg) no-repeat right;
       height: 100%;
       a {
         color: #270072;
@@ -183,7 +183,7 @@
       color: #270072;
       font-weight: bold;
       font-size: 15px;
-      background: url(/public/img/dropdown.svg) no-repeat right;
+      background: url(../../img/dropdown.svg) no-repeat right;
       text-align: left;
       cursor: pointer;
     }
@@ -208,7 +208,7 @@
       width: 100%;
       height: 100%;
       padding: 16px 0 0 20px;
-      background: url(/public/img/arrow.svg) no-repeat 660px;
+      background: url(../../img/arrow.svg) no-repeat 660px;
       &:active {
         color: $violetClair;
       }

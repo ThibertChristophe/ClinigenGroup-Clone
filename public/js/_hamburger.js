@@ -34,9 +34,9 @@ hamburgerButton.addEventListener("click", () => {
   hamburger_menu.classList.toggle("show");
   // Switch entre les 2 images de l'hamburger ( croix et hamburger)
   if (hamburger_menu.classList.contains("show")) {
-    hamburgerButtonIMG.src = "/public/img/closeHamb.svg";
+    hamburgerButtonIMG.src = "../img/closeHamb.svg";
   } else {
-    hamburgerButtonIMG.src = "/public/img/download.svg";
+    hamburgerButtonIMG.src = "../img/download.svg";
   }
 });
 
