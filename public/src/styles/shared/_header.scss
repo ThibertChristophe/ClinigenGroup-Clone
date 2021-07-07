@@ -125,6 +125,24 @@
       width: 450px;
     }
   }
+  .search_loupe {
+    display: flex;
+    position: relative;
+  }
+  .loupe {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 50px;
+    padding-left: 10px;
+    padding-top: 2px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    &:hover {
+      background-color: #5713ff;
+    }
+  }
   .hamburger {
     display: none;
     margin: 0 0 0 10px;
@@ -197,7 +215,6 @@
 .hamburger_sousMenu_about {
   display: none;
   margin-top: 20px;
-
   li {
     background-color: rgb(238, 238, 238);
     // padding: 20px 0 20px 20px;
