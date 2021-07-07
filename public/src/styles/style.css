@@ -231,7 +231,6 @@
 }
 .hamburger_menu .hamburger_menu_link {
   border-bottom: 1px solid #dadada;
-  padding: 20px 20px 20px 0;
   margin: 0 auto;
   width: 700px;
 }
@@ -251,16 +250,17 @@
   background: url(../../img/dropdown.svg) no-repeat right;
   text-align: left;
   cursor: pointer;
+  height: 65px;
 }
 .hamburger_menu .hamburger_menu_link:nth-last-child(1) {
   margin-bottom: 20px;
+  padding: 20px 20px 20px 0;
 }
 
 .hamburger_sousMenu_shortages,
 .hamburger_sousMenu_help,
 .hamburger_sousMenu_about {
   display: none;
-  margin-top: 20px;
 }
 .hamburger_sousMenu_shortages li,
 .hamburger_sousMenu_help li,
@@ -277,6 +277,7 @@
   height: 100%;
   padding: 16px 0 0 20px;
   background: url(../../img/arrow.svg) no-repeat 660px;
+  color: #270072;
 }
 .hamburger_sousMenu_shortages li a:active,
 .hamburger_sousMenu_help li a:active,
