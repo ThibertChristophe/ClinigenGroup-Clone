@@ -340,6 +340,11 @@
 .sousMenu_link:hover {
   background-color: #e2e2e2;
 }
+.sousMenu_link a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
 
 .search-fixed {
   position: fixed;

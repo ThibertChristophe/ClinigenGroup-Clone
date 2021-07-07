@@ -288,6 +288,11 @@
   &:hover {
     background-color: rgb(226, 226, 226);
   }
+  a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 // Placement et animation de retour de la bar de search lors du scroll
