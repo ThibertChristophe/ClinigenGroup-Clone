@@ -380,6 +380,44 @@
   display: block;
 }
 
+.liste_tiroir {
+  width: 500px;
+}
+.liste_tiroir .tiroir {
+  border-top: 1px solid #d8d8d8;
+  height: 55px;
+}
+.liste_tiroir .tiroir button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  color: #270072;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: transparent;
+  padding-right: 20px;
+}
+.liste_tiroir .tiroir .tiroir_fleche {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-bottom: 2px solid grey;
+  border-left: 2px solid grey;
+  transition: all 0.2s ease;
+  transform: rotate(-45deg);
+}
+.liste_tiroir .tiroir:nth-last-child(1) {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.showTiroir {
+  display: block;
+  visibility: visible;
+}
+
 .sectionAbout {
   margin: 0 auto;
   max-width: 1150px;

@@ -1,0 +1,36 @@
+.liste_tiroir {
+  width: 500px;
+  .tiroir {
+    border-top: 1px solid rgb(216, 216, 216);
+    height: 55px;
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      text-align: left;
+      color: $bleuFonce;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: transparent;
+      padding-right: 20px;
+    }
+    .tiroir_fleche {
+      display: inline-block;
+      height: 8px;
+      width: 8px;
+      border-bottom: 2px solid grey;
+      border-left: 2px solid grey;
+      transition: all 0.2s ease;
+      transform: rotate(-45deg);
+    }
+    &:nth-last-child(1) {
+      border-bottom: 1px solid rgb(216, 216, 216);
+    }
+  }
+}
+.showTiroir {
+  display: block;
+  visibility: visible;
+}
