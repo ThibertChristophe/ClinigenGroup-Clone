@@ -2,19 +2,25 @@
   width: 500px;
   .tiroir {
     border-top: 1px solid rgb(216, 216, 216);
-    height: 55px;
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     button {
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 100%;
-      height: 100%;
+      height: 55px;
       text-align: left;
       color: $bleuFonce;
       font-size: 18px;
       cursor: pointer;
       background-color: transparent;
       padding-right: 20px;
+    }
+    p {
+      display: none;
     }
     .tiroir_fleche {
       display: inline-block;

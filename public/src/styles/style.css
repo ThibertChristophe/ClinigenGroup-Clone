@@ -385,20 +385,26 @@
 }
 .liste_tiroir .tiroir {
   border-top: 1px solid #d8d8d8;
-  height: 55px;
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .liste_tiroir .tiroir button {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 100%;
+  height: 55px;
   text-align: left;
   color: #270072;
   font-size: 18px;
   cursor: pointer;
   background-color: transparent;
   padding-right: 20px;
+}
+.liste_tiroir .tiroir p {
+  display: none;
 }
 .liste_tiroir .tiroir .tiroir_fleche {
   display: inline-block;
