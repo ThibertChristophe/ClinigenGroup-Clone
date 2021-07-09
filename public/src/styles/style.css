@@ -827,6 +827,72 @@ h2 {
   }
 }
 
+.insights_contain {
+  max-width: 1100px;
+  margin: 0 auto 50px auto;
+  padding: 0 10px;
+}
+@media all and (max-width: 1200px) {
+  .insights_contain {
+    max-width: 900px;
+  }
+}
+@media all and (max-width: 990px) {
+  .insights_contain {
+    max-width: 700px;
+  }
+}
+
+.content h1 {
+  margin-bottom: 15px;
+}
+.content p {
+  margin-bottom: 50px;
+}
+.content a {
+  color: #7239ff;
+}
+.content a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.article_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media all and (max-width: 700px) {
+  .article_list {
+    width: 500px;
+  }
+}
+.article_list .article_card {
+  width: 300px;
+}
+@media all and (max-width: 700px) {
+  .article_list .article_card {
+    width: 100%;
+  }
+}
+.article_list .article_card img {
+  width: 300px;
+  height: 200px;
+}
+.article_list .article_card p {
+  margin: 5px 0;
+}
+.article_list .article_card a {
+  font-weight: bold;
+}
+.article_list .article_card a:hover {
+  text-decoration: underline;
+}
+.article_list .article_card a:after {
+  content: url(../../img/arrow.svg);
+  vertical-align: middle;
+}
+
 .login_main {
   max-width: 1100px;
   background-color: white;
