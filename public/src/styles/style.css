@@ -380,17 +380,20 @@
   display: block;
 }
 
-.liste_tiroir {
-  width: 450px;
+.liste_tiroir,
+.cantFind {
+  width: 750px;
 }
-.liste_tiroir .tiroir {
+.liste_tiroir .tiroir,
+.cantFind .tiroir {
   border-top: 1px solid #d8d8d8;
   min-height: 55px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
-.liste_tiroir .tiroir button {
+.liste_tiroir .tiroir button,
+.cantFind .tiroir button {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -403,17 +406,21 @@
   background-color: transparent;
   padding-right: 20px;
 }
-.liste_tiroir .tiroir .tiroir_content {
+.liste_tiroir .tiroir .tiroir_content,
+.cantFind .tiroir .tiroir_content {
   display: none;
 }
-.liste_tiroir .tiroir .tiroir_content h5 {
+.liste_tiroir .tiroir .tiroir_content h5,
+.cantFind .tiroir .tiroir_content h5 {
   font-size: 16px;
   line-height: 22.4px;
 }
-.liste_tiroir .tiroir .tiroir_content p {
+.liste_tiroir .tiroir .tiroir_content p,
+.cantFind .tiroir .tiroir_content p {
   margin-bottom: 20px;
 }
-.liste_tiroir .tiroir .tiroir_fleche {
+.liste_tiroir .tiroir .tiroir_fleche,
+.cantFind .tiroir .tiroir_fleche {
   display: inline-block;
   height: 8px;
   width: 8px;
@@ -422,8 +429,21 @@
   transition: all 0.2s ease;
   transform: rotate(-45deg);
 }
-.liste_tiroir .tiroir:nth-last-child(1) {
+.liste_tiroir .tiroir:nth-last-child(1),
+.cantFind .tiroir:nth-last-child(1) {
   border-bottom: 1px solid #d8d8d8;
+}
+@media all and (max-width: 1200px) {
+  .liste_tiroir,
+.cantFind {
+    width: 600px;
+  }
+}
+@media all and (max-width: 990px) {
+  .liste_tiroir,
+.cantFind {
+    width: 450px;
+  }
 }
 
 .showTiroir {

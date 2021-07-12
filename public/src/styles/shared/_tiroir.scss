@@ -1,5 +1,6 @@
-.liste_tiroir {
-  width: 450px;
+.liste_tiroir,
+.cantFind {
+  width: 750px;
   .tiroir {
     border-top: 1px solid rgb(216, 216, 216);
     min-height: 55px;
@@ -41,6 +42,12 @@
     &:nth-last-child(1) {
       border-bottom: 1px solid rgb(216, 216, 216);
     }
+  }
+  @media all and (max-width: 1200px) {
+    width: 600px;
+  }
+  @media all and (max-width: 990px) {
+    width: 450px;
   }
 }
 .showTiroir {
