@@ -1,5 +1,5 @@
 .liste_tiroir {
-  width: 500px;
+  width: 450px;
   .tiroir {
     border-top: 1px solid rgb(216, 216, 216);
     min-height: 55px;
@@ -19,8 +19,15 @@
       background-color: transparent;
       padding-right: 20px;
     }
-    p {
+    .tiroir_content {
       display: none;
+      h5 {
+        font-size: 16px;
+        line-height: 22.4px;
+      }
+      p {
+        margin-bottom: 20px;
+      }
     }
     .tiroir_fleche {
       display: inline-block;

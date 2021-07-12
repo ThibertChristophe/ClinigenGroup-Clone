@@ -381,7 +381,7 @@
 }
 
 .liste_tiroir {
-  width: 500px;
+  width: 450px;
 }
 .liste_tiroir .tiroir {
   border-top: 1px solid #d8d8d8;
@@ -403,8 +403,15 @@
   background-color: transparent;
   padding-right: 20px;
 }
-.liste_tiroir .tiroir p {
+.liste_tiroir .tiroir .tiroir_content {
   display: none;
+}
+.liste_tiroir .tiroir .tiroir_content h5 {
+  font-size: 16px;
+  line-height: 22.4px;
+}
+.liste_tiroir .tiroir .tiroir_content p {
+  margin-bottom: 20px;
 }
 .liste_tiroir .tiroir .tiroir_fleche {
   display: inline-block;
