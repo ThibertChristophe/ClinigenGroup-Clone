@@ -433,6 +433,10 @@
 .cantFind .tiroir:nth-last-child(1) {
   border-bottom: 1px solid #d8d8d8;
 }
+.liste_tiroir .tiroir ol li,
+.cantFind .tiroir ol li {
+  font-size: 16px;
+}
 @media all and (max-width: 1200px) {
   .liste_tiroir,
 .cantFind {
