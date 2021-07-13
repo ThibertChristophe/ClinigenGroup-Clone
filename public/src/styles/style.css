@@ -1178,9 +1178,59 @@ h2 {
     padding: 0;
   }
 }
-.importing {
+.tutorial_S1 {
+  width: 700px;
+  margin: 0 auto;
+}
+.tutorial_S1 h4 {
+  margin: 15px 0;
+  border-top: 1px solid #7239ff;
+  padding-top: 20px;
+}
+
+.tutorial_S2 {
   background-color: #f4f4f4;
   width: 100%;
+}
+
+.video_importing {
+  width: 700px;
+  margin: 0 auto;
+}
+.video_importing h4 {
+  margin: 15px 0;
+  border-top: 1px solid #7239ff;
+  padding-top: 20px;
+}
+
+.content {
+  margin-bottom: 50px;
+}
+
+.video_importing {
+  padding: 50px 0;
+}
+
+.list_cardVideo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.list_cardVideo .cardVideo {
+  width: 300px;
+}
+.list_cardVideo .cardVideo h5 {
+  margin: 10px 0;
+  font-size: 15px;
+}
+.list_cardVideo .cardVideo a {
+  display: block;
+  font-weight: bold;
+  background: url(../../img/arrow.svg) no-repeat 80px;
+  color: #501ece;
+}
+.list_cardVideo .cardVideo a:hover {
+  text-decoration: underline;
 }
 
 .section1 .section1__container1 {

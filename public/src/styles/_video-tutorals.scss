@@ -1,4 +1,51 @@
-.importing {
+.tutorial_S1 {
+  width: 700px;
+  margin: 0 auto;
+  h4 {
+    margin: 15px 0;
+    border-top: 1px solid $violetClair;
+    padding-top: 20px;
+  }
+}
+.tutorial_S2 {
   background-color: $fondGris;
   width: 100%;
+}
+.video_importing {
+  width: 700px;
+  margin: 0 auto;
+  h4 {
+    margin: 15px 0;
+    border-top: 1px solid $violetClair;
+    padding-top: 20px;
+  }
+}
+.content {
+  margin-bottom: 50px;
+}
+.video_importing {
+  padding: 50px 0;
+}
+.list_cardVideo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .cardVideo {
+    //flex: 0 0 50%;
+
+    width: 300px;
+    h5 {
+      margin: 10px 0;
+      font-size: 15px;
+    }
+    a {
+      display: block;
+      font-weight: bold;
+      background: url(../../img/arrow.svg) no-repeat 80px;
+      color: $violetFonce;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
