@@ -1178,6 +1178,11 @@ h2 {
     padding: 0;
   }
 }
+.importing {
+  background-color: #f4f4f4;
+  width: 100%;
+}
+
 .section1 .section1__container1 {
   display: block;
   padding-top: 60px;
