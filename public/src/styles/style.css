@@ -1588,6 +1588,24 @@ h4 {
   color: white;
 }
 
+ol {
+  margin-left: 20px;
+}
+
+.list_number {
+  list-style: decimal;
+}
+
+.quality_card ul li {
+  list-style: circle;
+  margin-left: 20px;
+}
+
+.quality_systemEnsure ul li {
+  list-style: circle;
+  margin-left: 20px;
+}
+
 .section1 .section1__container1 {
   display: block;
   padding-top: 60px;
