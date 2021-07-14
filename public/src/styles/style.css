@@ -25,6 +25,7 @@
   height: 100%;
   align-items: center;
   cursor: pointer;
+  z-index: 5;
 }
 @media all and (max-width: 990px) {
   .menu .lienMenu {
@@ -1179,13 +1180,26 @@ h2 {
   }
 }
 .tutorial_S1 {
-  width: 700px;
+  width: 1100px;
   margin: 0 auto;
 }
-.tutorial_S1 h4 {
-  margin: 15px 0;
+.tutorial_S1 .video_sourcing {
+  display: flex;
+  width: 1100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid blue;
+}
+
+.intro {
+  width: 800px;
+}
+
+h4 {
+  margin: 0 10px 15px 0;
   border-top: 1px solid #7239ff;
   padding-top: 20px;
+  width: 300px;
 }
 
 .tutorial_S2 {
@@ -1193,31 +1207,34 @@ h2 {
   width: 100%;
 }
 
-.video_importing {
-  width: 700px;
-  margin: 0 auto;
-}
-.video_importing h4 {
-  margin: 15px 0;
-  border-top: 1px solid #7239ff;
-  padding-top: 20px;
-}
-
 .content {
   margin-bottom: 50px;
 }
 
 .video_importing {
+  width: 1100px;
+  margin: 0 auto;
   padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .list_cardVideo {
   display: flex;
   flex-wrap: wrap;
+  border: 1px solid green;
+  width: 70%;
   justify-content: space-between;
 }
 .list_cardVideo .cardVideo {
-  width: 300px;
+  width: 370px;
+  height: 300px;
+  border: 1px solid black;
+}
+.list_cardVideo .cardVideo iframe {
+  width: 100%;
+  height: 225px;
 }
 .list_cardVideo .cardVideo h5 {
   margin: 10px 0;
@@ -1231,6 +1248,9 @@ h2 {
 }
 .list_cardVideo .cardVideo a:hover {
   text-decoration: underline;
+}
+.list_cardVideo .cardVideo:nth-child(1) {
+  margin-bottom: 10px;
 }
 
 .section1 .section1__container1 {
