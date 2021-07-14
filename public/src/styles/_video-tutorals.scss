@@ -6,17 +6,51 @@
     width: 1100px;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: 1px solid blue;
+    @media all and (max-width: 1200px) {
+      width: 900px;
+    }
+    @media all and (max-width: 990px) {
+      width: 700px;
+    }
+    @media all and (max-width: 770px) {
+      width: 500px;
+      padding: 0 5px;
+    }
+  }
+  @media all and (max-width: 1200px) {
+    width: 900px;
+  }
+  @media all and (max-width: 990px) {
+    width: 700px;
+  }
+  @media all and (max-width: 770px) {
+    width: 500px;
   }
 }
 .intro {
   width: 800px;
+  @media all and (max-width: 990px) {
+    width: 700px;
+  }
+  @media all and (max-width: 770px) {
+    width: 500px;
+    margin: 0 auto;
+  }
 }
 h4 {
   margin: 0 10px 15px 0;
   border-top: 1px solid $violetClair;
   padding-top: 20px;
   width: 300px;
+  @media all and (max-width: 1200px) {
+    width: 200px;
+  }
+  @media all and (max-width: 990px) {
+    width: 700px;
+  }
+  @media all and (max-width: 770px) {
+    width: 100%;
+  }
 }
 .tutorial_S2 {
   background-color: $fondGris;
@@ -33,21 +67,36 @@ h4 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  @media all and (max-width: 1200px) {
+    width: 900px;
+  }
+  @media all and (max-width: 990px) {
+    width: 700px;
+  }
+  @media all and (max-width: 770px) {
+    width: 500px;
+    padding: 0 5px;
+  }
 }
 
 .list_cardVideo {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid green;
   width: 70%;
   justify-content: space-between;
   .cardVideo {
     width: 370px;
-    height: 300px;
-    border: 1px solid black;
+    min-height: 300px;
     iframe {
       width: 100%;
       height: 225px;
+      @media all and (max-width: 1200px) {
+        height: 170px;
+      }
+      @media all and (max-width: 770px) {
+        width: 100%;
+        height: 300px;
+      }
     }
     h5 {
       margin: 10px 0;
@@ -63,7 +112,19 @@ h4 {
       }
     }
     &:nth-child(1) {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
+    @media all and (max-width: 1200px) {
+      width: 330px;
+    }
+    @media all and (max-width: 770px) {
+      width: 100%;
+    }
+  }
+  @media all and (max-width: 1200px) {
+    width: 75%;
+  }
+  @media all and (max-width: 990px) {
+    width: 100%;
   }
 }

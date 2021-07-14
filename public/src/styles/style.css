@@ -1188,11 +1188,52 @@ h2 {
   width: 1100px;
   justify-content: space-between;
   flex-wrap: wrap;
-  border: 1px solid blue;
+}
+@media all and (max-width: 1200px) {
+  .tutorial_S1 .video_sourcing {
+    width: 900px;
+  }
+}
+@media all and (max-width: 990px) {
+  .tutorial_S1 .video_sourcing {
+    width: 700px;
+  }
+}
+@media all and (max-width: 770px) {
+  .tutorial_S1 .video_sourcing {
+    width: 500px;
+    padding: 0 5px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .tutorial_S1 {
+    width: 900px;
+  }
+}
+@media all and (max-width: 990px) {
+  .tutorial_S1 {
+    width: 700px;
+  }
+}
+@media all and (max-width: 770px) {
+  .tutorial_S1 {
+    width: 500px;
+  }
 }
 
 .intro {
   width: 800px;
+}
+@media all and (max-width: 990px) {
+  .intro {
+    width: 700px;
+  }
+}
+@media all and (max-width: 770px) {
+  .intro {
+    width: 500px;
+    margin: 0 auto;
+  }
 }
 
 h4 {
@@ -1200,6 +1241,21 @@ h4 {
   border-top: 1px solid #7239ff;
   padding-top: 20px;
   width: 300px;
+}
+@media all and (max-width: 1200px) {
+  h4 {
+    width: 200px;
+  }
+}
+@media all and (max-width: 990px) {
+  h4 {
+    width: 700px;
+  }
+}
+@media all and (max-width: 770px) {
+  h4 {
+    width: 100%;
+  }
 }
 
 .tutorial_S2 {
@@ -1219,22 +1275,47 @@ h4 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media all and (max-width: 1200px) {
+  .video_importing {
+    width: 900px;
+  }
+}
+@media all and (max-width: 990px) {
+  .video_importing {
+    width: 700px;
+  }
+}
+@media all and (max-width: 770px) {
+  .video_importing {
+    width: 500px;
+    padding: 0 5px;
+  }
+}
 
 .list_cardVideo {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid green;
   width: 70%;
   justify-content: space-between;
 }
 .list_cardVideo .cardVideo {
   width: 370px;
-  height: 300px;
-  border: 1px solid black;
+  min-height: 300px;
 }
 .list_cardVideo .cardVideo iframe {
   width: 100%;
   height: 225px;
+}
+@media all and (max-width: 1200px) {
+  .list_cardVideo .cardVideo iframe {
+    height: 170px;
+  }
+}
+@media all and (max-width: 770px) {
+  .list_cardVideo .cardVideo iframe {
+    width: 100%;
+    height: 300px;
+  }
 }
 .list_cardVideo .cardVideo h5 {
   margin: 10px 0;
@@ -1250,7 +1331,27 @@ h4 {
   text-decoration: underline;
 }
 .list_cardVideo .cardVideo:nth-child(1) {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+@media all and (max-width: 1200px) {
+  .list_cardVideo .cardVideo {
+    width: 330px;
+  }
+}
+@media all and (max-width: 770px) {
+  .list_cardVideo .cardVideo {
+    width: 100%;
+  }
+}
+@media all and (max-width: 1200px) {
+  .list_cardVideo {
+    width: 75%;
+  }
+}
+@media all and (max-width: 990px) {
+  .list_cardVideo {
+    width: 100%;
+  }
 }
 
 .section1 .section1__container1 {
