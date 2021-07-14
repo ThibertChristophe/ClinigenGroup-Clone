@@ -1606,6 +1606,20 @@ ol {
   margin-left: 20px;
 }
 
+.love_awards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.love_awards img {
+  width: 500px;
+}
+.love_awards .love_awards_middle {
+  width: 600px;
+  text-align: center;
+}
+
 .section1 .section1__container1 {
   display: block;
   padding-top: 60px;
