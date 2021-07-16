@@ -2044,6 +2044,7 @@ ol {
 .section1 .section1__container2 .section1__container2_L h2 {
   width: 500px;
   margin-top: 100px;
+  margin: 100px auto 0 auto;
 }
 @media all and (max-width: 990px) {
   .section1 .section1__container2 .section1__container2_L h2 {
@@ -2139,6 +2140,11 @@ ol {
 .section1 input:hover {
   color: white;
   background-color: #270072;
+}
+@media all and (max-width: 770px) {
+  .section1 input {
+    margin-bottom: 50px;
+  }
 }
 
 .section2 {
@@ -2268,6 +2274,7 @@ ol {
 }
 @media all and (max-width: 765px) {
   .section2 .videoText {
+    max-width: 500px;
     flex-wrap: wrap;
     margin: 20px auto;
   }
