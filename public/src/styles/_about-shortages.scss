@@ -27,10 +27,10 @@
     display: flex;
     li {
       margin-right: 10px;
-      &:nth-last-child(1) {
-        &::before {
+      &:not(:nth-last-child(1)) {
+        &::after {
           content: "/";
-          margin-right: 10px;
+          margin-left: 10px;
         }
       }
     }
