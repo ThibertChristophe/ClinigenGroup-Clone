@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   img {
-    width: 400px;
+    width: 500px;
   }
   .love_awards_middle {
     display: flex;
@@ -32,6 +32,32 @@
       }
     }
   }
+  @media all and (max-width: 770px) {
+    flex-wrap: wrap;
+    .love_awards_middle {
+      order: 1;
+      h1 {
+        line-height: 35px;
+      }
+      input {
+        height: 40px;
+      }
+    }
+    .img_women {
+      order: 2;
+      width: 500px;
+    }
+  }
+  @media all and (max-width: 1200px) {
+    img {
+      width: 450px;
+    }
+  }
+  @media all and (max-width: 990px) {
+    img {
+      width: 400px;
+    }
+  }
 }
 .img_women {
   position: relative;
@@ -40,6 +66,9 @@
 .img_men {
   position: relative;
   top: 25px;
+  @media all and (max-width: 770px) {
+    display: none;
+  }
 }
 
 .award_2020 {
@@ -51,13 +80,22 @@
   align-items: center;
 
   .award_2020_middle {
-    width: 500px;
+    max-width: 900px;
     .btn_violet {
       margin-top: 20px;
       @include btn_violet;
       width: 350px;
       height: 40px;
     }
+    @media all and (max-width: 1200px) {
+      max-width: 700px;
+    }
+    @media all and (max-width: 990px) {
+      max-width: 500px;
+    }
+  }
+  @media all and (max-width: 770px) {
+    min-height: 300px;
   }
 }
 .award_categories {
@@ -70,7 +108,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 700px;
+    width: 950px;
     .award_categories_card {
       padding: 0 10px;
       flex: 0 0 33.33%;
@@ -80,8 +118,34 @@
         font-size: 30px;
       }
       img {
-        width: 150px;
+        width: 250px;
       }
+      @media all and (max-width: 1200px) {
+        img {
+          width: 200px;
+        }
+      }
+      @media all and (max-width: 1200px) {
+        img {
+          width: 150px;
+        }
+      }
+      @media all and (max-width: 770px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        img {
+          width: 450px;
+        }
+      }
+    }
+    @media all and (max-width: 1200px) {
+      width: 800px;
+    }
+    @media all and (max-width: 990px) {
+      width: 700px;
+    }
+    @media all and (max-width: 770px) {
+      width: 500px;
     }
   }
   .btn_violet {
@@ -100,7 +164,13 @@
   justify-content: center;
   align-items: center;
   .entryCriteria_middle {
-    width: 500px;
+    width: 700px;
+    @media all and (max-width: 1200px) {
+      width: 600px;
+    }
+    @media all and (max-width: 990px) {
+      width: 500px;
+    }
   }
   h2 {
     color: white;
@@ -120,5 +190,8 @@
       background-color: white;
       color: $bleuFonce;
     }
+  }
+  @media all and (max-width: 770px) {
+    min-height: 350px;
   }
 }

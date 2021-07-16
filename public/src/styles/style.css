@@ -1613,7 +1613,7 @@ ol {
   align-items: center;
 }
 .love_awards img {
-  width: 400px;
+  width: 500px;
 }
 .love_awards .love_awards_middle {
   display: flex;
@@ -1645,6 +1645,34 @@ ol {
   background-color: #270072;
   color: white;
 }
+@media all and (max-width: 770px) {
+  .love_awards {
+    flex-wrap: wrap;
+  }
+  .love_awards .love_awards_middle {
+    order: 1;
+  }
+  .love_awards .love_awards_middle h1 {
+    line-height: 35px;
+  }
+  .love_awards .love_awards_middle input {
+    height: 40px;
+  }
+  .love_awards .img_women {
+    order: 2;
+    width: 500px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .love_awards img {
+    width: 450px;
+  }
+}
+@media all and (max-width: 990px) {
+  .love_awards img {
+    width: 400px;
+  }
+}
 
 .img_women {
   position: relative;
@@ -1654,6 +1682,11 @@ ol {
 .img_men {
   position: relative;
   top: 25px;
+}
+@media all and (max-width: 770px) {
+  .img_men {
+    display: none;
+  }
 }
 
 .award_2020 {
@@ -1665,7 +1698,7 @@ ol {
   align-items: center;
 }
 .award_2020 .award_2020_middle {
-  width: 500px;
+  max-width: 900px;
 }
 .award_2020 .award_2020_middle .btn_violet {
   margin-top: 20px;
@@ -1683,6 +1716,21 @@ ol {
   background-color: #7239ff;
   color: white;
 }
+@media all and (max-width: 1200px) {
+  .award_2020 .award_2020_middle {
+    max-width: 700px;
+  }
+}
+@media all and (max-width: 990px) {
+  .award_2020 .award_2020_middle {
+    max-width: 500px;
+  }
+}
+@media all and (max-width: 770px) {
+  .award_2020 {
+    min-height: 300px;
+  }
+}
 
 .award_categories {
   display: flex;
@@ -1695,7 +1743,7 @@ ol {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 700px;
+  width: 950px;
 }
 .award_categories .award_categories_list .award_categories_card {
   padding: 0 10px;
@@ -1707,7 +1755,41 @@ ol {
   font-size: 30px;
 }
 .award_categories .award_categories_list .award_categories_card img {
-  width: 150px;
+  width: 250px;
+}
+@media all and (max-width: 1200px) {
+  .award_categories .award_categories_list .award_categories_card img {
+    width: 200px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .award_categories .award_categories_list .award_categories_card img {
+    width: 150px;
+  }
+}
+@media all and (max-width: 770px) {
+  .award_categories .award_categories_list .award_categories_card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .award_categories .award_categories_list .award_categories_card img {
+    width: 450px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .award_categories .award_categories_list {
+    width: 800px;
+  }
+}
+@media all and (max-width: 990px) {
+  .award_categories .award_categories_list {
+    width: 700px;
+  }
+}
+@media all and (max-width: 770px) {
+  .award_categories .award_categories_list {
+    width: 500px;
+  }
 }
 .award_categories .btn_violet {
   background-color: transparent;
@@ -1736,7 +1818,17 @@ ol {
   align-items: center;
 }
 .entryCriteria .entryCriteria_middle {
-  width: 500px;
+  width: 700px;
+}
+@media all and (max-width: 1200px) {
+  .entryCriteria .entryCriteria_middle {
+    width: 600px;
+  }
+}
+@media all and (max-width: 990px) {
+  .entryCriteria .entryCriteria_middle {
+    width: 500px;
+  }
 }
 .entryCriteria h2 {
   color: white;
@@ -1756,6 +1848,11 @@ ol {
 .entryCriteria .btn_blanc:hover {
   background-color: white;
   color: #270072;
+}
+@media all and (max-width: 770px) {
+  .entryCriteria {
+    min-height: 350px;
+  }
 }
 
 .section1 .section1__container1 {
