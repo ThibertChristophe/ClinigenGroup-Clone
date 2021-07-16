@@ -62,6 +62,11 @@
         margin-top: 100px;
         margin: 100px auto 0 auto;
         @media all and (max-width: 990px) {
+          margin: 0;
+          width: 300px;
+        }
+        @media all and (max-width: 770px) {
+          margin: 100px auto 0 auto;
           width: 300px;
         }
       }
