@@ -2253,11 +2253,13 @@ ol {
 }
 @media all and (max-width: 770px) {
   .section2 .videoText .labelVideo {
-    max-width: 500px;
+    min-width: 100%;
   }
 }
 @media all and (max-width: 1200px) {
   .section2 iframe {
+    position: relative;
+    top: -65px;
     width: 500px;
   }
   .section2 .videoText {
@@ -2267,14 +2269,13 @@ ol {
 @media all and (max-width: 765px) {
   .section2 .videoText {
     flex-wrap: wrap;
-    justify-content: center;
     margin: 20px auto;
   }
   .section2 .videoText .video {
     margin: 0;
   }
-  .section2 .labelVideo {
-    min-width: 85%;
+  .section2 iframe {
+    top: 50px;
   }
 }
 

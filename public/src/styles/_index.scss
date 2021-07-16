@@ -250,12 +250,14 @@
         font-size: 18px;
       }
       @media all and (max-width: 770px) {
-        max-width: 500px;
+        min-width: 100%;
       }
     }
   }
   @media all and (max-width: 1200px) {
     iframe {
+      position: relative;
+      top: -65px;
       width: 500px;
     }
     .videoText {
@@ -265,14 +267,14 @@
   @media all and (max-width: 765px) {
     .videoText {
       flex-wrap: wrap;
-      justify-content: center;
       margin: 20px auto;
       .video {
         margin: 0;
       }
     }
-    .labelVideo {
-      min-width: 85%;
+
+    iframe {
+      top: 50px;
     }
   }
 }
