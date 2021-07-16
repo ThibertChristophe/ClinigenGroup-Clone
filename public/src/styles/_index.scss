@@ -31,7 +31,7 @@
     justify-content: space-between;
     max-width: 1100px;
     margin: 0 auto 25px auto;
-    height: 310px;
+    min-height: 310px;
     h2 {
       width: 400px;
       margin-top: 50px;
@@ -57,9 +57,13 @@
     }
     .section1__container2_L {
       text-align: left;
+
       h2 {
         width: 500px;
         margin-top: 100px;
+        @media all and (max-width: 990px) {
+          width: 300px;
+        }
       }
       @media all and (max-width: 770px) {
         text-align: center;
