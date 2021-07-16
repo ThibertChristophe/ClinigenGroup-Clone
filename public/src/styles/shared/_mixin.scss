@@ -16,3 +16,17 @@
   cursor: pointer;
   transition: all 0.2s ease;
 }
+
+@mixin btn_violet {
+  background-color: transparent;
+  border: 1px solid $violetClair;
+  border-radius: 20px;
+  color: $violetClair;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: $violetClair;
+    color: white;
+  }
+}

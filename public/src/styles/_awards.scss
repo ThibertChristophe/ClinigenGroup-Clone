@@ -13,7 +13,6 @@
     text-align: center;
     min-width: 400px;
     max-width: 400px;
-    border: 1px solid red;
     h1 {
       line-height: 56px;
     }
@@ -26,6 +25,11 @@
       width: 320px;
       height: 55px;
       border-radius: 50px;
+      transition: all 0.2s ease;
+      &:hover {
+        background-color: $bleuFonce;
+        color: white;
+      }
     }
   }
 }
@@ -36,4 +40,85 @@
 .img_men {
   position: relative;
   top: 25px;
+}
+
+.award_2020 {
+  background-color: $fondGris;
+  min-height: 500px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .award_2020_middle {
+    width: 500px;
+    .btn_violet {
+      margin-top: 20px;
+      @include btn_violet;
+      width: 350px;
+      height: 40px;
+    }
+  }
+}
+.award_categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  .award_categories_list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 700px;
+    .award_categories_card {
+      padding: 0 10px;
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      h2 {
+        margin-bottom: 10px;
+        font-size: 30px;
+      }
+      img {
+        width: 150px;
+      }
+    }
+  }
+  .btn_violet {
+    @include btn_violet;
+    width: 175px;
+    height: 40px;
+    margin: 50px 0;
+  }
+}
+.entryCriteria {
+  background-color: $violetClair;
+  min-height: 400px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .entryCriteria_middle {
+    width: 500px;
+  }
+  h2 {
+    color: white;
+  }
+  .btn_blanc {
+    margin: 15px 0;
+    width: 300px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    &:hover {
+      background-color: white;
+      color: $bleuFonce;
+    }
+  }
 }

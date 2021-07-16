@@ -1622,7 +1622,6 @@ ol {
   text-align: center;
   min-width: 400px;
   max-width: 400px;
-  border: 1px solid red;
 }
 .love_awards .love_awards_middle h1 {
   line-height: 56px;
@@ -1640,6 +1639,11 @@ ol {
   width: 320px;
   height: 55px;
   border-radius: 50px;
+  transition: all 0.2s ease;
+}
+.love_awards .love_awards_middle input:hover {
+  background-color: #270072;
+  color: white;
 }
 
 .img_women {
@@ -1650,6 +1654,108 @@ ol {
 .img_men {
   position: relative;
   top: 25px;
+}
+
+.award_2020 {
+  background-color: #f4f4f4;
+  min-height: 500px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.award_2020 .award_2020_middle {
+  width: 500px;
+}
+.award_2020 .award_2020_middle .btn_violet {
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid #7239ff;
+  border-radius: 20px;
+  color: #7239ff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 350px;
+  height: 40px;
+}
+.award_2020 .award_2020_middle .btn_violet:hover {
+  background-color: #7239ff;
+  color: white;
+}
+
+.award_categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.award_categories .award_categories_list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 700px;
+}
+.award_categories .award_categories_list .award_categories_card {
+  padding: 0 10px;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+.award_categories .award_categories_list .award_categories_card h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.award_categories .award_categories_list .award_categories_card img {
+  width: 150px;
+}
+.award_categories .btn_violet {
+  background-color: transparent;
+  border: 1px solid #7239ff;
+  border-radius: 20px;
+  color: #7239ff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 175px;
+  height: 40px;
+  margin: 50px 0;
+}
+.award_categories .btn_violet:hover {
+  background-color: #7239ff;
+  color: white;
+}
+
+.entryCriteria {
+  background-color: #7239ff;
+  min-height: 400px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.entryCriteria .entryCriteria_middle {
+  width: 500px;
+}
+.entryCriteria h2 {
+  color: white;
+}
+.entryCriteria .btn_blanc {
+  margin: 15px 0;
+  width: 300px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.entryCriteria .btn_blanc:hover {
+  background-color: white;
+  color: #270072;
 }
 
 .section1 .section1__container1 {
@@ -2401,7 +2507,7 @@ p {
   display: inline-block;
   width: 70px;
   border-top: 2px solid #8cdb1f;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
