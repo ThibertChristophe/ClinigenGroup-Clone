@@ -140,8 +140,14 @@
       transform: scale(1.4);
     }
   }
-  input {
+
+  .btn_findOutMore {
     @include btn_vert;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-emphasis: center;
+    font-size: 14px;
     width: 200px;
     height: 40px;
     transition: all 0.2s ease;

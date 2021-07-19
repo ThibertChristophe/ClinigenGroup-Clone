@@ -2134,22 +2134,27 @@ ol {
     transform: scale(1.4);
   }
 }
-.section1 input {
+.section1 .btn_findOutMore {
   background-color: #8cdb1f;
   border-radius: 20px;
   color: #270072;
   font-weight: bold;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-emphasis: center;
+  font-size: 14px;
   width: 200px;
   height: 40px;
   transition: all 0.2s ease;
 }
-.section1 input:hover {
+.section1 .btn_findOutMore:hover {
   color: white;
   background-color: #270072;
 }
 @media all and (max-width: 770px) {
-  .section1 input {
+  .section1 .btn_findOutMore {
     margin-bottom: 50px;
   }
 }
