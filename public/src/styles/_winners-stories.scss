@@ -1,0 +1,39 @@
+.winners_stories {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 5px;
+  @media all and (max-width: 1200px) {
+    max-width: 900px;
+  }
+  @media all and (max-width: 990px) {
+    max-width: 700px;
+  }
+  @media all and (max-width: 770px) {
+    max-width: 500px;
+  }
+  .winners_stories_title {
+    text-align: center;
+    border-bottom: 2px solid $vertClair;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  iframe {
+    width: 700px;
+    height: 400px;
+  }
+  .winners_stories_list {
+    margin: 20px 0;
+    .winners_stories_card {
+      display: flex;
+      border-top: 2px solid $vertClair;
+      padding: 40px 0;
+      p {
+        margin: 15px 0;
+      }
+      .winners_stories_card_L {
+        width: 450px;
+        margin-right: 30px;
+      }
+    }
+  }
+}
