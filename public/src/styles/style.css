@@ -2021,8 +2021,8 @@ ol {
   margin: 15px 0;
 }
 .winners_stories .winners_stories_list .winners_stories_card .winners_stories_card_L {
-  width: 450px;
-  margin-right: 30px;
+  width: 1100px;
+  margin-right: 50px;
 }
 @media all and (max-width: 770px) {
   .winners_stories .winners_stories_list .winners_stories_card {
@@ -2031,6 +2031,9 @@ ol {
   }
   .winners_stories .winners_stories_list .winners_stories_card .winners_stories_card_R {
     margin-top: 20px;
+  }
+  .winners_stories .winners_stories_list .winners_stories_card .winners_stories_card_L {
+    margin-right: 5px;
   }
 }
 
