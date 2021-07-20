@@ -2000,16 +2000,17 @@ ol {
   margin-bottom: 20px;
 }
 .winners_stories iframe {
+  margin-top: 30px;
   width: 700px;
   height: 400px;
 }
 .winners_stories .winners_stories_list {
-  margin: 20px 0;
+  margin: 40px 0 0 0;
 }
 .winners_stories .winners_stories_list .winners_stories_card {
   display: flex;
   border-top: 2px solid #8cdb1f;
-  padding: 40px 0;
+  padding: 45px 0;
 }
 .winners_stories .winners_stories_list .winners_stories_card p {
   margin: 15px 0;
@@ -2021,7 +2022,7 @@ ol {
 
 .winners_stories_footer {
   text-align: center;
-  margin: 80px 0;
+  margin: 40px 0 80px;
   border-bottom: 2px solid #8cdb1f;
   border-top: 2px solid #8cdb1f;
   padding: 40px 5px;
