@@ -2019,6 +2019,15 @@ ol {
   width: 450px;
   margin-right: 30px;
 }
+@media all and (max-width: 770px) {
+  .winners_stories .winners_stories_list .winners_stories_card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .winners_stories .winners_stories_list .winners_stories_card .winners_stories_card_R {
+    margin-top: 20px;
+  }
+}
 
 .winners_stories_footer {
   text-align: center;
@@ -2077,8 +2086,12 @@ ol {
   cursor: pointer;
   transition: all 0.2s ease;
   margin: 20px 0 40px 0;
-  width: 200px;
+  width: 250px;
   height: 40px;
+}
+.winners_stories_footer_violet .winners_stories_footer_violet_content input:hover {
+  background-color: white;
+  color: #270072;
 }
 
 .section1 .section1__container1 {

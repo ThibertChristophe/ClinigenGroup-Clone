@@ -35,6 +35,13 @@
         width: 450px;
         margin-right: 30px;
       }
+      @media all and (max-width: 770px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        .winners_stories_card_R {
+          margin-top: 20px;
+        }
+      }
     }
   }
 }
@@ -81,8 +88,13 @@
     input {
       @include btn_transparent;
       margin: 20px 0 40px 0;
-      width: 200px;
+      width: 250px;
       height: 40px;
+
+      &:hover {
+        background-color: white;
+        color: $bleuFonce;
+      }
     }
   }
 }
