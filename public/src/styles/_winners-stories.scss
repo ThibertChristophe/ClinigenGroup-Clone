@@ -37,3 +37,27 @@
     }
   }
 }
+.winners_stories_footer {
+  text-align: center;
+  margin: 80px 0;
+  border-bottom: 2px solid $vertClair;
+  border-top: 2px solid $vertClair;
+  padding: 40px 5px;
+  h2 {
+    font-size: 40px;
+  }
+  p {
+    margin: 15px 0;
+  }
+  .btn_vert {
+    @include btn_vert;
+    height: 40px;
+    width: 350px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    &:hover {
+      color: white;
+      background-color: $bleuFonce;
+    }
+  }
+}
