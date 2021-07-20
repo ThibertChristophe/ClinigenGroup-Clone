@@ -62,3 +62,27 @@
     }
   }
 }
+.winners_stories_footer_violet {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: $violetClair;
+  .winners_stories_footer_violet_content {
+    color: white;
+    width: 450px;
+    margin: 50px 0 50px 0;
+    h2 {
+      color: white;
+      font-size: 40px;
+    }
+    p {
+      margin: 15px 0;
+    }
+    input {
+      @include btn_transparent;
+      margin: 20px 0 40px 0;
+      width: 200px;
+      height: 40px;
+    }
+  }
+}

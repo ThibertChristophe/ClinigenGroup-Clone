@@ -2049,6 +2049,38 @@ ol {
   background-color: #270072;
 }
 
+.winners_stories_footer_violet {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #7239ff;
+}
+.winners_stories_footer_violet .winners_stories_footer_violet_content {
+  color: white;
+  width: 450px;
+  margin: 50px 0 50px 0;
+}
+.winners_stories_footer_violet .winners_stories_footer_violet_content h2 {
+  color: white;
+  font-size: 40px;
+}
+.winners_stories_footer_violet .winners_stories_footer_violet_content p {
+  margin: 15px 0;
+}
+.winners_stories_footer_violet .winners_stories_footer_violet_content input {
+  color: white;
+  background: transparent;
+  border-radius: 40px;
+  border: 1px solid white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 20px 0 40px 0;
+  width: 200px;
+  height: 40px;
+}
+
 .section1 .section1__container1 {
   display: block;
   padding-top: 60px;
