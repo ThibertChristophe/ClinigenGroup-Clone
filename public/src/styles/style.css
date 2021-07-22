@@ -2247,6 +2247,12 @@ ol {
   color: white;
 }
 
+.mustBeFill {
+  display: none;
+  color: red;
+  font-size: 14px;
+}
+
 .section1 .section1__container1 {
   display: block;
   padding-top: 60px;

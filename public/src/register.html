@@ -207,24 +207,25 @@
       <!--------------------------------------- PARTIE 2 ------------------------------------------------------>
       <section class="register_P2">
         <div class="register_form">
-          <form action="">
+          <form action="" class="register_formulaire">
             <div class="form_subTitle"><h3>Contact details</h3></div>
             <div class="form_contactDetails">
               <div class="form_card">
                 <label for="first_name">First Name * </label>
-                <input type="text" name="first_name" />
+                <input type="text" name="first_name" required />
+                <span class="mustBeFill">This field is required.</span>
               </div>
               <div class="form_card">
                 <label for="sur_name">Surname * </label>
-                <input type="text" name="sur_name" />
+                <input type="text" name="sur_name" required />
               </div>
               <div class="form_card">
                 <label for="email">Email * </label>
-                <input type="text" name="email" />
+                <input type="text" name="email" required />
               </div>
               <div class="form_card">
                 <label for="phone">Phone * </label>
-                <input type="text" name="phone" />
+                <input type="text" name="phone" required />
               </div>
             </div>
             <div class="form_subTitle"><h3>Your organisation</h3></div>
@@ -235,6 +236,7 @@
                   type="text"
                   name="organisation_name"
                   class="input_organisation"
+                  required
                 />
               </div>
             </div>
@@ -307,5 +309,6 @@
     <script src="../js/header.js"></script>
     <script src="../js/_menuFixed.js"></script>
     <script src="../js/_hamburger.js"></script>
+    <script src="../js/_form.js"></script>
   </body>
 </html>
