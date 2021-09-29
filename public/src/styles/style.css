@@ -2533,7 +2533,6 @@ ol {
   display: flex;
   max-width: 1100px;
   margin: 70px auto;
-  border: 1px solid red;
 }
 .section2 .videoText .video {
   display: inline-block;
@@ -2543,7 +2542,6 @@ ol {
 }
 .section2 .videoText .labelVideo {
   max-width: 340px;
-  border: 1px solid green;
 }
 .section2 .videoText .labelVideo h4 {
   margin-bottom: 80px;
